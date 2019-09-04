@@ -1,0 +1,29 @@
+[ req ]
+default_bits        = 4096
+default_md      = sha256
+default_keyfile     = ca.priv.key.pem
+distinguished_name  = req_distinguished_name
+attributes      = req_attributes
+x509_extensions = v3_req
+
+[ req_distinguished_name ]
+countryName         = CN
+countryName_min         = 2
+countryName_max         = 2
+stateOrProvinceName     = ZJ
+localityName            = HZ
+0.organizationName      = yakirchen.github.io
+organizationalUnitName      = yakirchen.github.io
+commonName          = yakirchen.github.io
+commonName_max          = 64
+emailAddress            = iamyakirchen@outlook.com
+emailAddress_max        = 64
+
+[ v3_req ]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+
+[ req_attributes ]
+challengePassword       = 123456
+challengePassword_min       = 4
+challengePassword_max       = 20

@@ -1,0 +1,31 @@
+[package]
+name = "rustlang"
+version = "0.1.0"
+authors = ["yakirChen <iamyakirchen@outlook.com>"]
+edition = "2018"
+
+[lib]
+name = "rustlang"
+
+[workspace]
+members = [
+  "bridgec",
+  "example",
+  "book",
+  "atide",
+  "jasm",
+  "flatbuf",
+  "house",
+  "middleware/postgresql",
+]
+
+[[bin]]
+name = "hello"
+path = "example/src/bin/hello.rs"
+
+[dependencies]
+example = { path = "example" }
+jasm = { path = "jasm" }
+book = { path = "book" }
+bridgec = { path = "bridgec" }
+flatbuf = { path = "flatbuf" }

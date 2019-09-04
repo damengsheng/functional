@@ -1,0 +1,8 @@
+[package]
+name = "rdown"
+version = "0.1.0"
+authors = ["yakirChen <iamyakirchen@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.20"

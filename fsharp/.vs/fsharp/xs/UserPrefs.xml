@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{D3844566-CC7B-4DCF-B933-3B9F9C4CAAAE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="fsharp-lang/Hello.fs">
+    <Files>
+      <File FileName="fsharp-lang/Hello.fs" Line="31" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="fsharp" expanded="True">
+            <Node name="fsharp-lang" expanded="True">
+              <Node name="Hello.fs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.fsharp-lang PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

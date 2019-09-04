@@ -1,0 +1,3 @@
+[build]
+target = "triple"
+incremental = true

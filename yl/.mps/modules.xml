@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/runtime/yl.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/sandbox/yl.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/yl.mpl" folder="" />
+    </projectModules>
+  </component>
+</project>

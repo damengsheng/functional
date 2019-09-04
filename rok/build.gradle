@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'maven-publish'
+    id 'distribution'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = 'http://maven.aliyun.com/nexus/content/groups/public'
+    }
+
+    maven {
+        url = 'http://repo.maven.apache.org/maven2'
+    }
+}
+
+dependencies {
+    compile 'com.github.javaparser:javaparser-core-serialization:3.14.11'
+    compile 'com.github.javaparser:javaparser-core:3.14.11'
+    compile 'com.github.javaparser:javaparser-symbol-solver-core:3.14.11'
+}
+
+group = 'rok'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_12
+targetCompatibility = JavaVersion.VERSION_12
+ext.moduleName = 'rok'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+compileJava {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        options.compilerArgs = [
+                '--enable-preview',
+                '--module-path', classpath.asPath,
+                '--add-exports', 'jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
+                '--add-exports', 'jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED',
+                '--add-exports', 'jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED',
+                '--add-exports', 'jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED',
+        ]
+        classpath = files()
+    }
+}

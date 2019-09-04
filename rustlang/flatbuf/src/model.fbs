@@ -1,0 +1,30 @@
+namespace model;
+
+table Module {
+    id: ulong;
+    website: string;
+    summary: string;
+    name: string;
+    author: string;
+    state: string;
+    latestVersion: string;
+    displayName: string;
+    description: string;
+    application: bool;
+    demo: bool;
+    web: bool;
+    license: string;
+    autoInstall: bool;
+    toBuy: bool;
+    maintainer: string;
+    contributors: string;
+    publishedVersion: string;
+    url: string;
+    sequence: string;
+}
+
+table Model {
+    id: ulong;
+    name: string;
+    module: Module;
+}

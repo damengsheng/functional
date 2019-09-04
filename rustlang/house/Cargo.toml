@@ -1,0 +1,12 @@
+[package]
+name = "house"
+version = "0.1.0"
+authors = ["yakirChen <iamyakirchen@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.20"
+
+[[bin]]
+name = "house_server"
+path = "src/bin/server.rs"
