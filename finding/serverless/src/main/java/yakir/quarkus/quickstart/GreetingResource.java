@@ -7,6 +7,11 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * GreetingResource
+ *
+ * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2019/09/05 22:01.
+ */
 @Path("/hello")
 public class GreetingResource {
 

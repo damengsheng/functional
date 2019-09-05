@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.yakirchen</groupId>
     <artifactId>finding</artifactId>
-    <name>Finding</name>
-    <description>Finding</description>
+    <name>finding</name>
+    <description>finding</description>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <url>https://yakirchen.github.io</url>
@@ -69,6 +69,7 @@
 
     <modules>
         <module>network</module>
+        <module>assembly</module>
         <module>modular</module>
         <module>serverless</module>
         <module>stream</module>

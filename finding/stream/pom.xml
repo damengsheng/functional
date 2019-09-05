@@ -10,12 +10,13 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>io.github.yakirchen</groupId>
     <artifactId>stream</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>flink-quickstart</module>
+        <module>search-engine</module>
+        <module>mq</module>
     </modules>
 </project>
