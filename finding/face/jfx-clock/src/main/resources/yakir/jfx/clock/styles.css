@@ -1,0 +1,9 @@
+.label {
+    -fx-background-color: #333333;
+    -fx-font-size: 20;
+    -fx-font-family: "Source Code Pro";
+    -fx-pref-width: 260.0;
+    -fx-pref-height: 40.0;
+    -fx-text-fill: "white";
+    -fx-alignment: "CENTER";
+}

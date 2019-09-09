@@ -1,35 +1,18 @@
 # Java Modular Tutorials
 
 ## JVM Options
-```shell
-versions=(
-    1.8
-    11
-    12
-    13
-    14
-)
 
-for i in $versions[@]; do
-    /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -version > ${i}_print_flags_initial.txt
-    /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version > ${i}_print_flags_final.txt
-done
+[1.8 flags final](docs/jvm_options/1.8_print_flags_final.txt)
+[1.8 flags initial](docs/jvm_options/1.8_print_flags_initial.txt)
+[11 flags final](docs/jvm_options/11_print_flags_final.txt)
+[11 flags initial](docs/jvm_options/11_print_flags_initial.txt)
+[12 flags final](docs/jvm_options/12_print_flags_final.txt)
+[12 flags initial](docs/jvm_options/12_print_flags_initial.txt)
+[13 flags final](docs/jvm_options/13_print_flags_final.txt)
+[13 flags initial](docs/jvm_options/13_print_flags_initial.txt)
+[14 flags final](docs/jvm_options/14_print_flags_final.txt)
+[14 flags initial](docs/jvm_options/14_print_flags_initial.txt)
 
-/Users/yakir/local/jabba/jdk/adopt-openj9@1.8.222-10/Contents/Home/bin/java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -version > openj9_8_print_flags_initial.txt
-/Users/yakir/local/jabba/jdk/adopt-openj9@1.8.222-10/Contents/Home/bin/java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version > openj9_8_print_flags_final.txt
-
-/Users/yakir/local/jabba/jdk/adopt-openj9@1.12.33-0/Contents/Home/bin/java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -version > openj9_8_print_flags_initial.txt
-/Users/yakir/local/jabba/jdk/adopt-openj9@1.12.33-0/Contents/Home/bin/java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version > openj9_8_print_flags_final.txt
-
-
-/usr/libexec/java_home -v 11 --exec java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+EagerJVMCI -Dgraal.ShowConfiguration=info -XX:+JVMCIPrintProperties -version
-
-opendiff jvm_options/11_print_flags_initial.txt docs/jvm_options/11_print_flags_final.txt
-opendiff jvm_options/8_print_flags_initial.txt docs/jvm_options/8_print_flags_final.txt
-
-opendiff jvm_options/8_print_flags_final.txt docs/jvm_options/11_print_flags_final.txt
-opendiff jvm_options/11_print_flags_final.txt docs/jvm_options/13_print_flags_final.txt
-```
 
 ## 一、模块描述
 _**<module path> == <module name>**_ 
@@ -64,22 +47,11 @@ _**<module path> == <module name>**_
 每个JAR文件只能包含一个 Module
 
 ## Java Modules
-```shell
-# 列出所有模块
-versions=(
-    11
-    12
-    13
-    14
-)
-for i in $versions[@]; do
-    /usr/libexec/java_home -v ${i} --exec java --list-modules > jdk${i}_modules.md
-done
-```
+JDK11 ~ JDK14所有模块
 - [JDK11 Modules](docs/modules/jdk11_modules.md)
 - [JDK12 Modules](docs/modules/jdk12_modules.md)
 - [JDK13 Modules](docs/modules/jdk13_modules.md)
-- [JDK13 Modules](docs/modules/jdk13_modules.md)
+- [JDK14 Modules](docs/modules/jdk14_modules.md)
 
 
 ## 模块声明\指令 (Module Declarations)
