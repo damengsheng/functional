@@ -17,6 +17,6 @@
     <modules>
         <module>flink-quickstart</module>
         <module>search-engine</module>
-        <module>mq</module>
+        <module>msg-queue</module>
     </modules>
 </project>

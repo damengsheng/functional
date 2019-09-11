@@ -14,18 +14,19 @@ members = [
   "book",
   "atide",
   "jasm",
-  "flatbuf",
+  "rok",
+  "rios",
+  "randroid",
   "house",
   "middleware/postgresql",
 ]
-
-[[bin]]
-name = "hello"
-path = "example/src/bin/hello.rs"
 
 [dependencies]
 example = { path = "example" }
 jasm = { path = "jasm" }
 book = { path = "book" }
 bridgec = { path = "bridgec" }
-flatbuf = { path = "flatbuf" }
+rok = { path = "rok" }
+
+[profile.release]
+lto = true

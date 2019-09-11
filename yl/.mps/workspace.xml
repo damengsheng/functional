@@ -7,19 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a27d94d4-9d27-4996-b631-6aa9aaf72a14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/generator/template/main@generator.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/models/yl.behavior.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/models/yl.constraints.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/models/yl.editor.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/models/yl.structure.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/models/yl.typesystem.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/runtime/models/yl.runtime.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/runtime/yl.runtime.msd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/sandbox/models/yl.sandbox.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/sandbox/yl.sandbox.msd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/yl/yl.mpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finding/face/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../finding/face/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finding/face/swing-clock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../finding/face/swing-clock/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finding/modular/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../finding/modular/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finding/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../finding/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../finding/stream/flink-quickstart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../finding/stream/flink-quickstart/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +25,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="1976853f-3eee-4815-843f-a7a784cd8e9e/r:bcca149d-fef8-44a9-a8b5-d2d1e81bf30b(TempModule1976853f-3eee-4815-843f-a7a784cd8e9e/ConsoleModel_66482095966682)">
+            <model ref="ced6a752-31d7-445f-a23f-fb0e4ada6b57/r:f08bb39d-99af-446e-b9cd-6b04af5850e0(TempModuleced6a752-31d7-445f-a23f-fb0e4ada6b57/ConsoleModel_151213340360889)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -53,11 +45,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="5wOgxwC4pkH">
-                <node concept="3balQm" id="5wOgxwC4pkI" role="aymYE" />
-                <node concept="2Clz$F" id="5wOgxwC4pkJ" role="aymYO" />
-                <node concept="2_V_lH" id="5wOgxwC4pkK" role="1PhJh3">
-                  <ref role="2_V_lI" node="5wOgxwC4pkJ" resolve="CommandHolder" />
+              <node concept="aymSD" id="77fy7EmhSi7">
+                <node concept="3balQm" id="77fy7EmhSi8" role="aymYE" />
+                <node concept="2Clz$F" id="77fy7EmhSi9" role="aymYO" />
+                <node concept="2_V_lH" id="77fy7EmhSia" role="1PhJh3">
+                  <ref role="2_V_lI" node="77fy7EmhSi9" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -180,6 +172,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="8758742c-641d-4bcd-ba60-4b18a692b463(yl)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yl#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7baaa93f-b7e1-467f-baa6-a3bdbf2c5b76(main@generator) in IdeaFile[file:///Users/yakir/Developer/think/functional/yl/generator/template/main@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="69a92d8e-8483-4e45-a444-0b528d6703cf" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -194,7 +204,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="69a92d8e-8483-4e45-a444-0b528d6703cf" />
+              <option name="myItemId" value="8758742c-641d-4bcd-ba60-4b18a692b463(yl)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -222,25 +232,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="8758742c-641d-4bcd-ba60-4b18a692b463(yl)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yl#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7baaa93f-b7e1-467f-baa6-a3bdbf2c5b76(main@generator) in IdeaFile[file:///Users/yakir/Developer/think/functional/yl/generator/template/main@generator.mps]" />
+              <option name="myItemId" value="69a92d8e-8483-4e45-a444-0b528d6703cf" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8758742c-641d-4bcd-ba60-4b18a692b463(yl)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -255,12 +253,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="yl#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,7 +300,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="UsagesViewTool">
     <version id="1" />

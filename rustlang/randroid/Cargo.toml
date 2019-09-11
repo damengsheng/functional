@@ -1,0 +1,12 @@
+[package]
+name = "randroid"
+version = "0.1.0"
+authors = ["yakirChen <iamyakirchen@outlook.com>"]
+edition = "2018"
+
+[lib]
+name = "randroid"
+crate-type = ["cdylib"]
+
+[dependencies]
+jni = { version = "0.13.1", default-features = false }

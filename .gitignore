@@ -172,9 +172,6 @@ nb-configuration.xml
 .springBeans
 .sts4-cache
 
-### Xcode
-*.xcodeproj
-
 ### Eclipse
 .project/
 .settings/

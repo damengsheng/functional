@@ -17,5 +17,6 @@
     <modules>
         <module>swing-clock</module>
         <module>jfx-clock</module>
+        <module>graph</module>
     </modules>
 </project>

@@ -1,0 +1,21 @@
+type Language {
+    id: ID,
+    code: String,
+    isoCode: String,
+}
+
+
+type User {
+    id: ID,
+    name: String,
+    birthday: LocalDateTime,
+    language: Language,
+}
+
+
+
+type Query{
+
+}
+
+scalar LocalDateTime

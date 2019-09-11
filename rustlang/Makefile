@@ -11,8 +11,8 @@ clean:
 
 fmt:
 	cargo verify-project --frozen
-	# cargo fmt --all -- --check
 	cargo fmt
+	cargo fmt --all -- --check
 	cargo verify-project
 
 build: clean fmt
