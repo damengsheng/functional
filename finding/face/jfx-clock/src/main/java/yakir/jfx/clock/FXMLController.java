@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 
 import java.net.URL;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
@@ -19,8 +20,8 @@ import java.util.ResourceBundle;
  */
 public class FXMLController implements Initializable {
 
-    private static final ZoneOffset        SHANGHAI_ZONE = ZoneOffset.of("+8");
-    private static final DateTimeFormatter DTF           = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final ZoneId            DEFAULT_ZONE = ZoneOffset.systemDefault();
+    private static final DateTimeFormatter DTF          = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     @FXML
     private Label label;
@@ -30,7 +31,7 @@ public class FXMLController implements Initializable {
         new AnimationTimer() {
             @Override
             public void handle(long now) {
-                Platform.runLater(() -> label.setText(LocalDateTime.now(SHANGHAI_ZONE).format(DTF)));
+                Platform.runLater(() -> label.setText(LocalDateTime.now(DEFAULT_ZONE).format(DTF)));
             }
         }.start();
     }

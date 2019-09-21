@@ -82,7 +82,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.oracle</groupId>
+            <groupId>com.sun</groupId>
             <artifactId>tools</artifactId>
             <version>${java.version}</version>
             <scope>system</scope>

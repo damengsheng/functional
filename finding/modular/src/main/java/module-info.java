@@ -1,6 +1,3 @@
-import yakir.modular.service.Greeting;
-import yakir.modular.service.SayHello;
-
 /**
  * house
  *
@@ -14,11 +11,11 @@ module modular {
 
     requires java.instrument;
 
-    uses Greeting;
+    uses yakir.modular.service.Greeting;
 
     exports yakir.modular;
 
     opens yakir.modular;
 
-    provides Greeting with SayHello;
+    provides yakir.modular.service.Greeting with yakir.modular.service.SayHello;
 }

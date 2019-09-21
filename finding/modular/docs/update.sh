@@ -9,8 +9,13 @@ versions=(
 )
 
 for i in $versions[@]; do
-    /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -version > jvm_options/${i}_print_flags_initial.txt
-    /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version > jvm_options/${i}_print_flags_final.txt
+    if [[ "${i}" == "1.8" ]]; then
+        /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -version > jvm_options/${i}_print_flags_initial.txt
+        /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version > jvm_options/${i}_print_flags_final.txt
+    else
+        /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -XX:+PrintFlagsRanges -version > jvm_options/${i}_print_flags_initial.txt
+        /usr/libexec/java_home -v ${i} --exec java -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -XX:+PrintFlagsRanges -version > jvm_options/${i}_print_flags_final.txt
+    fi
 done
 
 #opendiff jvm_options/11_print_flags_initial.txt docs/jvm_options/11_print_flags_final.txt

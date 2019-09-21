@@ -8,6 +8,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class ClockLabel extends JLabel implements ActionListener {
@@ -26,6 +27,6 @@ public class ClockLabel extends JLabel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        this.setText(LocalDateTime.now().format(DTF));
+        this.setText(LocalDateTime.now(ZoneOffset.systemDefault()).format(DTF));
     }
 }

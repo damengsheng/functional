@@ -1,1 +1,3 @@
-pub mod model_generated;
+struct ClassFile {
+    magic: u8,
+}

@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{D3844566-CC7B-4DCF-B933-3B9F9C4CAAAE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="fsharp-lang/Hello.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="fsharp-lang/HelloFsharp.fs">
     <Files>
-      <File FileName="fsharp-lang/Hello.fs" Line="31" Column="1" />
+      <File FileName="fsharp-lang/HelloFsharp.fs" Line="26" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="fsharp" expanded="True">
             <Node name="fsharp-lang" expanded="True">
-              <Node name="Hello.fs" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="HelloFsharp.fs" selected="True" />
             </Node>
           </Node>
         </State>

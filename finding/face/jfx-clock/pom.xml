@@ -14,11 +14,29 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>11</java.version>
-        <jfx.version>11.0.2</jfx.version>
-
         <javafx.maven.plugin.version>0.0.3</javafx.maven.plugin.version>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>13</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <java.version>13</java.version>
+                <jfx.version>13-ea+14b</jfx.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>14</id>
+            <properties>
+                <java.version>14</java.version>
+                <jfx.version>14-ea+1</jfx.version>
+            </properties>
+        </profile>
+    </profiles>
+
 
     <dependencyManagement>
         <dependencies>
@@ -82,6 +100,9 @@
                     <release>${java.version}</release>
                     <jlinkImageName>JFXClock</jlinkImageName>
                     <launcher>launcher</launcher>
+                    <release>${java.version}</release>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -107,8 +128,10 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>13</source>
+                    <target>13</target>
+                    <testSource>${java.version}</testSource>
+                    <testTarget>${java.version}</testTarget>
                 </configuration>
             </plugin>
         </plugins>

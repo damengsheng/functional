@@ -13,9 +13,9 @@ import java.net.URL;
  * JFXClock
  *
  * <pre>
- *    mvn clean compile -DskipTests -U exec:java
- *    jdk13 && mvn clean compile exec:java -Dexec.mainClass=yakir.jfx.clock.JFXClock
- *    jdk13 && mvn clean javafx:run
+ *    mvn clean compile -DskipTests exec:java -Dexec.mainClass=yakir.jfx.clock.JFXClock
+ *    jdk13 && mvn clean compile javafx:run -P13
+ *    jdk14 && mvn clean compile javafx:run -P14
  * </pre>
  *
  * @author yakir <a href="https://yakirchen.github.io">yakirchen.github.io</a> on 09/06/2018 12:01.

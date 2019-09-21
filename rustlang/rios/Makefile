@@ -19,3 +19,7 @@ init:
 	mkdir -p rios-em/rios-em/{include,libs}
 	cp rios.h rios-em/rios-em/include
 	cp ../target/universal/release/librios.a rios-em/rios-em/libs
+
+clean:
+	cargo clean
+	cd rios-em && xcodebuild -project rios-em.xcodeproj -scheme rios-em -configuration Release clean ; cd -

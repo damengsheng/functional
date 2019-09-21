@@ -122,6 +122,7 @@
     uintx CMS_SweepWeight                          = 75                                        {product} {default}
      bool CalculateClassFingerprint                = false                                     {product} {default}
      bool CheckJNICalls                            = false                                     {product} {default}
+     bool ClassForNameDeferLinking                 = false                                     {product} {default}
      bool ClassUnloading                           = true                                      {product} {default}
      bool ClassUnloadingWithConcurrentMark         = true                                      {product} {default}
      bool ClipInlining                             = true                                      {product} {default}
