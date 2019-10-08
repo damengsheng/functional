@@ -32,7 +32,7 @@
         (display arg)
         (display " ")
         (display arg0)
-        (display " ")        
+        (display " ")
         (display arg1)
         (display " ")
         (display arg2)

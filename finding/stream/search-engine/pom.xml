@@ -14,7 +14,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <elastic.version>7.3.2</elastic.version>
+        <elastic.version>7.4.0</elastic.version>
         <lucene.version>8.2.0</lucene.version>
         <jackson.version>2.10.0.pr3</jackson.version>
     </properties>

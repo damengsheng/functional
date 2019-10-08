@@ -129,7 +129,6 @@
     uintx CodeCacheExpansionSize                   = 65536                                  {pd product} {default}
      bool CompactFields                            = true                                      {product} {default}
      bool CompactStrings                           = true                                   {pd product} {default}
-     intx CompilationPolicyChoice                  = 0                                         {product} {default}
 ccstrlist CompileCommand                           =                                           {product} {default}
     ccstr CompileCommandFile                       =                                           {product} {default}
 ccstrlist CompileOnly                              =                                           {product} {default}
@@ -148,7 +147,6 @@ ccstrlist CompileOnly                              =                            
      bool DTraceMethodProbes                       = false                                     {product} {default}
      bool DTraceMonitorProbes                      = false                                     {product} {default}
      bool Debugging                                = false                                     {product} {default}
-     bool DeoptimizeRandom                         = false                                     {product} {default}
      bool DisableAttachMechanism                   = false                                     {product} {default}
      bool DisableExplicitGC                        = false                                     {product} {default}
      bool DisplayVMOutputToStderr                  = false                                     {product} {default}

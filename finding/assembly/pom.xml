@@ -21,11 +21,11 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
-        <asm.version>7.2-beta</asm.version>
+        <asm.version>7.2</asm.version>
         <cglib.version>3.3.0</cglib.version>
         <bytebuddy.version>1.10.1</bytebuddy.version>
         <byteman.version>4.0.7</byteman.version>
-        <javassist.version>3.25.0-GA</javassist.version>
+        <javassist.version>3.26.0-GA</javassist.version>
         <cfr.version>0.141</cfr.version>
     </properties>
 

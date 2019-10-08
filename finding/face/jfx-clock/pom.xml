@@ -25,7 +25,7 @@
             </activation>
             <properties>
                 <java.version>13</java.version>
-                <jfx.version>13-ea+14b</jfx.version>
+                <jfx.version>13</jfx.version>
             </properties>
         </profile>
         <profile>

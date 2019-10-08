@@ -11,8 +11,8 @@
     </parent>
 
     <properties>
-        <dubbo.version>2.7.3</dubbo.version>
-        <grpc.version>1.23.0</grpc.version>
+        <dubbo.version>2.7.4</dubbo.version>
+        <grpc.version>1.24.0</grpc.version>
         <protobuf.version>3.9.0</protobuf.version>
     </properties>
 
