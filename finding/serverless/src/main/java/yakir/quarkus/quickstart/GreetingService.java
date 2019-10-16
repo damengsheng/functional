@@ -1,6 +1,7 @@
 package yakir.quarkus.quickstart;
 
 import javax.enterprise.context.ApplicationScoped;
+import java.util.Optional;
 
 /**
  * GreetingService
@@ -11,6 +12,8 @@ import javax.enterprise.context.ApplicationScoped;
 public class GreetingService {
 
     public String greeting(String name) {
-        return "Hello ".concat(name).concat(" !");
+        return Optional.ofNullable(name)
+                .map(_name -> "Hello ".concat(_name).concat(" !"))
+                .orElse("");
     }
 }

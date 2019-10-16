@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{D3844566-CC7B-4DCF-B933-3B9F9C4CAAAE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="fsharp-lang/HelloFsharp.fs">
     <Files>
-      <File FileName="fsharp-lang/HelloFsharp.fs" Line="26" Column="17" />
+      <File FileName="fsharp-lang/HelloFsharp.fs" Line="35" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

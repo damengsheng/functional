@@ -768,6 +768,7 @@ ccstrlist OnOutOfMemoryError                        =                           
      bool UseGCLogFileRotation                      = false                               {product}
      bool UseGCOverheadLimit                        = true                                {product}
      bool UseGCTaskAffinity                         = false                               {product}
+     bool UseGHASHIntrinsics                        = true                                {product}
      bool UseHeavyMonitors                          = false                               {product}
      bool UseHugeTLBFS                              = false                               {product}
      bool UseImplicitStableValues                   = true                                {C2 diagnostic}
