@@ -12,11 +12,12 @@ import java.nio.charset.StandardCharsets;
 /**
  * EchoServerHandler
  *
- * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 04/05/2019 01:02.
+ * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2019/04/05 01:02.
  */
 public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
-private static final Logger log = LogManager.getLogger(EchoClientHandler.class);
+    private static final Logger log = LogManager.getLogger(EchoClientHandler.class);
+
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         ctx.writeAndFlush(Unpooled.copiedBuffer("Netty Rocks", StandardCharsets.UTF_8));

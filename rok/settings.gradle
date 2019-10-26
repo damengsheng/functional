@@ -1,1 +1,3 @@
 rootProject.name = 'rok'
+
+include("rok-core")

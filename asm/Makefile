@@ -3,7 +3,8 @@ VERSION = 0.0.1
 SRC := $(wildcard ./*.asm)
 OBJ := $(patsubst ./%.asm, build/%.o, $(SRC))
 
-CC = as
+# CC = as
+CC = nasm
 
 default: all
 

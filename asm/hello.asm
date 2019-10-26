@@ -1,8 +1,7 @@
 ; /usr/local/bin/nasm -f macho64 hello.asm && ld -macosx_version_min 10.7.0 -lSystem -o hello hello.o&& ./hello
 
-global start
-
-section .text
+    .section .text
+    .global start
 
 start:
     mov     rax, 0x2000004 ; write

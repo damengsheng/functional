@@ -32,6 +32,7 @@ public class OIOEchoServer {
 
     private static final Logger log = LogManager.getLogger(OIOEchoServer.class);
 
+    @SuppressWarnings("deprecation")
     public OIOEchoServer build() throws Exception {
 
         EventLoopGroup  oiogroup  = new OioEventLoopGroup();
