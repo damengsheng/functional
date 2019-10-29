@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.yakirchen</groupId>
+        <artifactId>java-standard</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>io.github.yakirchen</groupId>
+    <artifactId>java-standard-net</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <profiles>
+        <profile>
+            <id>bioserver</id>
+            <properties>
+                <exec.mainClass>yakir.standard.net.bio.BIOServer</exec.mainClass>
+            </properties>
+            <build>
+                <finalName>BIOServer</finalName>
+            </build>
+        </profile>
+        <profile>
+            <id>bioclient</id>
+            <properties>
+                <exec.mainClass>yakir.standard.net.bio.BIOClient</exec.mainClass>
+            </properties>
+            <build>
+                <finalName>BIOClient</finalName>
+            </build>
+        </profile>
+
+        <profile>
+            <id>nioserver</id>
+            <properties>
+                <exec.mainClass>yakir.standard.net.nio.NIOServer</exec.mainClass>
+            </properties>
+            <build>
+                <finalName>NIOServer</finalName>
+            </build>
+        </profile>
+        <profile>
+            <id>nioclient</id>
+            <properties>
+                <exec.mainClass>yakir.standard.net.nio.NIOClient</exec.mainClass>
+            </properties>
+            <build>
+                <finalName>NIOClient</finalName>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.yakirchen</groupId>
+            <artifactId>java-standard-tools</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <release>${java.version}</release>
+                    <compilerArgs>
+                        <!--<arg>&#45;&#45;add-exports</arg>
+                        <arg>java-standard-tools/standard.tools=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.ssl=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.util=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/com.sun.net.ssl.internal.ssl=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.jca=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.net.util=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/jdk.internal.misc=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.internal.interfaces=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.provider.certpath=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.internal.spec=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.validator=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.action=ALL-UNNAMED</arg>
+                        <arg>&#45;&#45;add-exports</arg>
+                        <arg>java.base/sun.security.x509=ALL-UNNAMED</arg>-->
+
+                        <!-- this arg syntax from the 1st comment at https://issues.apache.org/jira/browse/MCOMPILER-311
+                         and patch using src from https://stackoverflow.com/questions/36270671/how-to-patch-openjdk-9-with-jigsaw-integrated
+                        <arg>&#45;&#45;patch-module=java.base=${basedir}/src/main/java</arg>-->
+
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
