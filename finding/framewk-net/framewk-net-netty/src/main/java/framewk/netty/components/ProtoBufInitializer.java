@@ -1,4 +1,4 @@
-package standard.netty.components;
+package framewk.netty.components;
 
 import com.google.protobuf.MessageLite;
 import io.netty.channel.Channel;
@@ -12,7 +12,7 @@ import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 /**
  * ProtoBufInitializer
  *
- * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 04/11/2019 00:32.
+ * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2019/04/11 00:32.
  */
 public class ProtoBufInitializer extends ChannelInitializer<Channel> {
 

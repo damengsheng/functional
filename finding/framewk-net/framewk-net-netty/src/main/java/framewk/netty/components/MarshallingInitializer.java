@@ -1,4 +1,4 @@
-package standard.netty.components;
+package framewk.netty.components;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -14,7 +14,7 @@ import java.io.Serializable;
 /**
  * MarshallingInitializer
  *
- * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 04/11/2019 00:26.
+ * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2019/04/11 00:26.
  */
 public class MarshallingInitializer extends ChannelInitializer<Channel> {
 

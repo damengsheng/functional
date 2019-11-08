@@ -1,5 +1,6 @@
-package standard.netty.echo;
+package framewk.netty.echo;
 
+import framewk.netty.utils.Inet;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -11,14 +12,13 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import standard.utils.Inet;
 
 import java.util.Optional;
 
 /**
  * EchoClient
  *
- * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 04/05/2019 00:45.
+ * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2019/04/05 00:45.
  */
 public class EchoClient {
 

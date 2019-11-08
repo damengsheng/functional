@@ -1,5 +1,6 @@
-package standard.netty.echo;
+package framewk.netty.echo;
 
+import framewk.netty.utils.Inet;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -14,11 +15,10 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import standard.utils.Inet;
 
 import java.net.InetSocketAddress;
 
-import static standard.utils.Inet.SERVER_NETTY_ECHO;
+import static framewk.netty.utils.Inet.SERVER_NETTY_ECHO;
 
 /**
  * NIOEchoServer

@@ -51,6 +51,8 @@
         <module>java-standard-stream</module>
         <module>java-standard-swing</module>
         <module>java-standard-compiler</module>
+        <module>java-standard-agent</module>
+        <module>java-standard-jvmti-agent</module>
 <!--        <module>java-standard-instrument</module>-->
     </modules>
 

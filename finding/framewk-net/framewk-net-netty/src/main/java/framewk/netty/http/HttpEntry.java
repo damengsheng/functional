@@ -1,4 +1,4 @@
-package standard.netty.http;
+package framewk.netty.http;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.CompositeByteBuf;

@@ -3,6 +3,10 @@ package standard.core;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * TheUnsafe
@@ -34,8 +38,32 @@ public class TheSafe {
         return "hello ".concat(name).concat(" !");
     }
 
+
+    public List<Map<String, Object>> greeting(String name, String myName, List<Map<String, Object>> data) {
+
+
+        return data;
+    }
+
+    public void theSafeList(TheSafe theSafe) throws Throwable {
+
+        List<Map<String, Object>> data = new ArrayList<>();
+        Map<String, Object>       map  = new HashMap<>();
+        map.put("one", 1);
+        data.add(map);
+
+        MethodType methodType = MethodType.methodType(List.class, String.class, String.class, List.class);
+        MethodHandle methodHandle = MethodHandles.publicLookup()
+                .findVirtual(TheSafe.class, "greeting", methodType);
+        Object greeting0 = methodHandle.invoke(theSafe, "yakir", "yakirChen", data);
+        String greeting  = greeting0.toString();
+        System.out.println(greeting);
+    }
+
+
     public static void main(String[] args) throws Throwable {
         TheSafe theSafe = new TheSafe();
-        theSafe.theSafe(theSafe);
+//        theSafe.theSafe(theSafe);
+        theSafe.theSafeList(theSafe);
     }
 }

@@ -1,4 +1,4 @@
-package standard.netty.components.decoder;
+package framewk.netty.components.decoder;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

@@ -12,7 +12,7 @@ import io.github.classgraph.FieldInfoList;
 import io.github.classgraph.ScanResult;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import yakir.face.graph.anno.Struct;
+import standard.face.graph.anno.Struct;
 
 import java.util.Set;
 

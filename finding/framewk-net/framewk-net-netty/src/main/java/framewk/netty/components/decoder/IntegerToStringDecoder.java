@@ -1,4 +1,4 @@
-package standard.netty.components.decoder;
+package framewk.netty.components.decoder;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;

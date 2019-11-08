@@ -24,7 +24,7 @@ cbindgen src/lib.rs -l c > rios-em/rios-em/include/rios.h
 
 mkdir -p rios-em/rios-em/{include,libs}
 cp rios.h rios-em/rios-em/include
-cp target/universal/release/librios.a rios-em/rios-em/libs
+cp ../target/universal/release/librios.a rios-em/rios-em/libs
 ```
 
 ![1](../../images/rios/1.png)  

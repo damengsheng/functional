@@ -64,13 +64,6 @@ public class Triple<T, K, V> implements Serializable {
                 .concat(" }");
     }
 
-//    @Override
-//    public int hashCode() {
-//        return 31 + (null != topic ? topic.hashCode() : 0) +
-//               13 + (null != key ? key.hashCode() : 0) +
-//               31 + (null != value ? value.hashCode() : 0);
-//    }
-
     @Override
     public int hashCode() {
         final int prime  = 31;

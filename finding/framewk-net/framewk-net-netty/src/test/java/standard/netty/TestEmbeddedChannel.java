@@ -1,11 +1,11 @@
 package standard.netty;
 
+import framewk.netty.components.decoder.FixedLengthFrameDecoder;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.embedded.EmbeddedChannel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import yakir.netty.components.decoder.FixedLengthFrameDecoder;
 
 /**
  * TestEmbeddedChannel

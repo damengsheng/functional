@@ -27,7 +27,11 @@
         <guava.version>28.1-jre</guava.version>
 
         <netty.version>4.1.43.Final</netty.version>
-        <netty.tcnative.version>2.0.26.Final</netty.tcnative.version>
+        <netty.tcnative.version>2.0.27.Final</netty.tcnative.version>
+
+        <http.core5.version>5.0-beta10</http.core5.version>
+        <http.client5.version>5.0-beta6</http.client5.version>
+        <okhttp3.version>4.2.2</okhttp3.version>
 
         <dubbo.version>2.7.4</dubbo.version>
         <grpc.version>1.24.1</grpc.version>
@@ -39,6 +43,8 @@
         <module>framewk-net-grpc-server</module>
         <module>framewk-net-grpc-client</module>
         <module>framewk-net-grpc-facade</module>
+        <module>framewk-net-httpcomponents</module>
+        <module>framewk-net-okhttp</module>
     </modules>
 
     <dependencyManagement>

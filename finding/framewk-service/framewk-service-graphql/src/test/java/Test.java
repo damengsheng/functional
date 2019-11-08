@@ -1,4 +1,4 @@
-import yakir.face.graph.processor.GraphQLProcessor;
+import standard.face.graph.processor.GraphQLProcessor;
 
 /**
  * Test

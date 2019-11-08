@@ -1,7 +1,6 @@
 package standard.face.graph.model;
 
-import yakir.face.graph.anno.Index;
-import yakir.face.graph.anno.Struct;
+import standard.face.graph.anno.Index;
 
 import java.io.Serializable;
 

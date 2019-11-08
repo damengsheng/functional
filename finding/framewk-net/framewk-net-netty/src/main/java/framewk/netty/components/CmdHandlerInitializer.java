@@ -1,4 +1,4 @@
-package standard.netty.components;
+package framewk.netty.components;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.Channel;

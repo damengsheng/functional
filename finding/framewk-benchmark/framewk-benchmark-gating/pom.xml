@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.yakirchen</groupId>
+        <artifactId>framewk-benchmark</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>framewk-benchmark-gating</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <properties>
+        <gatling.version>3.3.0</gatling.version>
+        <gatling.maven.plugin.version>3.0.5</gatling.maven.plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-parent</artifactId>
+                <version>${gatling.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>io.gatling.highcharts</groupId>
+                <artifactId>gatling-charts-highcharts</artifactId>
+                <version>${gatling.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-recorder</artifactId>
+                <version>${gatling.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.gatling.highcharts</groupId>
+            <artifactId>gatling-charts-highcharts</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>io.gatling</groupId>
+                    <artifactId>gatling-maven-plugin</artifactId>
+                    <version>${gatling.maven.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>gatling</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.gatling</groupId>
+                        <artifactId>gatling-maven-plugin</artifactId>
+                        <configuration>
+                            <simulationClass>io.github.yakirchen.gatling.BasticSimulation</simulationClass>
+                            <runDescription>This-is-the-run-description
+                            </runDescription>             <!-- short text that will be displayed in the HTML reports -->
+                            <skip>false
+                            </skip>                                                       <!-- skip executing this plugin -->
+                            <failOnError>true
+                            </failOnError>                                          <!-- report failure in case of assertion failure, typically to fail CI pipeline -->
+                            <continueOnAssertionFailure>false
+                            </continueOnAssertionFailure>           <!-- keep on executing multiple simulations even if one fails -->
+                            <useOldJenkinsJUnitSupport>false
+                            </useOldJenkinsJUnitSupport>             <!-- report results to Jenkins JUnit support (workaround until we manage to get Gatling support into Jenkins) -->
+                            <jvmArgs>
+                                <jvmArg>-server</jvmArg>
+                                <jvmArg>-ea</jvmArg>
+                                <jvmArg>-XshowSettings:all</jvmArg>
+                                <jvmArg>-Xverify:none</jvmArg>
+                                <jvmArg>-XX:+UnlockCommercialFeatures</jvmArg>
+                                <jvmArg>-XX:+UnlockExperimentalVMOptions</jvmArg>
+                                <jvmArg>-XX:+UnlockDiagnosticVMOptions</jvmArg>
+                                <jvmArg>-Xss2M</jvmArg>
+                                <jvmArg>-Xms2048M</jvmArg>
+                                <jvmArg>-Xmx2048M</jvmArg>
+                                <jvmArg>-XX:ReservedCodeCacheSize=240m</jvmArg>
+                                <jvmArg>-XX:+UseCompressedOops</jvmArg>
+                                <jvmArg>-XX:SoftRefLRUPolicyMSPerMB=50</jvmArg>
+                                <jvmArg>-XX:+UseG1GC</jvmArg>
+                                <jvmArg>-XX:+UseNUMA</jvmArg>
+                                <jvmArg>-XX:+UseCompressedOops</jvmArg>
+                                <jvmArg>-XX:+AlwaysPreTouch</jvmArg>
+                                <jvmArg>-XX:MaxMetaspaceSize=640M</jvmArg>
+                                <jvmArg>-XX:MinMetaspaceFreeRatio=60</jvmArg>
+                                <jvmArg>-XX:ParallelGCThreads=8</jvmArg>
+                                <jvmArg>-XX:ConcGCThreads=4</jvmArg>
+                                <jvmArg>-XX:SurvivorRatio=8</jvmArg>
+                                <jvmArg>-XX:MaxGCPauseMillis=1200</jvmArg>
+                                <jvmArg>-XX:InitiatingHeapOccupancyPercent=30</jvmArg>
+                                <jvmArg>-XX:G1NewSizePercent=6</jvmArg>
+                                <jvmArg>-XX:G1ReservePercent=15</jvmArg>
+                                <jvmArg>-Dgatling.http.ahc.connectTimeout=6000000</jvmArg>
+                                <jvmArg>-Dgatling.http.ahc.requestTimeout=6000000</jvmArg>
+                                <jvmArg>-Dgatling.http.ahc.sslSessionTimeout=6000000</jvmArg>
+                                <jvmArg>-Dgatling.http.ahc.pooledConnectionIdleTimeout=6000000</jvmArg>
+                                <jvmArg>-Dgatling.http.ahc.readTimeout=6000000</jvmArg>
+                            </jvmArgs>
+                            <overrideJvmArgs>false
+                            </overrideJvmArgs>                                 <!-- if above option should override the defaults instead of replacing them -->
+                            <propagateSystemProperties>true
+                            </propagateSystemProperties>              <!-- if System properties from the maven JVM should be propagated to the Gatling forked one -->
+                            <resultsFolder>/Volumes/To/logs/gatling</resultsFolder>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

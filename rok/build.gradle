@@ -21,8 +21,16 @@ repositories {
 ext {
     javaparser_version = "3.15.2"
     javapoet_version = "1.11.1"
-    idea_version='2019.2.3'
+    idea_version='2019.2.4'
 }
+
+/**
+ * /Volumes/To/repos/gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC
+ *
+ * rget -n 50 https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIC/2019.2.4/ideaIC-2019.2.4.zip
+ *
+ * rget -n 60 https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIC/2019.2.4/ideaIC-2019.2.4-sources.jar
+ */
 
 dependencies {
 

@@ -24,6 +24,7 @@
 		250F35982328E76D00ECDF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250F359A2328E76D00ECDF23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250F35A52328E95600ECDF23 /* librios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librios.a; path = "rios-em/libs/librios.a"; sourceTree = "<group>"; };
+		2570C9A8236960530004AFC1 /* rios-em.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rios-em.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		250F358D2328E76C00ECDF23 /* rios-em */ = {
 			isa = PBXGroup;
 			children = (
+				2570C9A8236960530004AFC1 /* rios-em.entitlements */,
 				250F358E2328E76C00ECDF23 /* AppDelegate.swift */,
 				250F35902328E76C00ECDF23 /* ViewController.swift */,
 				250F35922328E76C00ECDF23 /* Main.storyboard */,
@@ -294,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "rios-em/rios-em.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AYKV4P8P58;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rios-em/include";
@@ -309,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yakir.rios-em";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/rios-em/include/rios.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "rios-em/rios-em.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AYKV4P8P58;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/rios-em/include";
@@ -334,6 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "yakir.rios-em";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/rios-em/include/rios.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

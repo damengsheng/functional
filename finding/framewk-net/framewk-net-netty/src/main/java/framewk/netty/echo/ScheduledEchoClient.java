@@ -1,5 +1,7 @@
-package standard.netty.echo;
+package framewk.netty.echo;
 
+import framewk.netty.utils.Inet;
+import framewk.netty.utils.Times;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -15,8 +17,6 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import standard.utils.Inet;
-import standard.utils.Times;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
