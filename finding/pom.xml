@@ -94,7 +94,7 @@
         <org.codehaus.mojo.exec.version>1.6.0</org.codehaus.mojo.exec.version>
         <google.errorprone.version>2.3.3</google.errorprone.version>
 
-        <jackson.version>2.10.0.pr3</jackson.version>
+        <jackson.version>2.10.1</jackson.version>
 
         <maven.os.version>1.6.2</maven.os.version>
         <os.detection.classifierWithLikes>
@@ -121,6 +121,7 @@
         <module>framewk-net</module>
         <module>framewk-service</module>
         <module>framewk-benchmark</module>
+        <module>search-engine</module>
         <module>stream</module>
     </modules>
 

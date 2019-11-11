@@ -3,7 +3,7 @@
 source ~/.zshrc
 
 VERSION=1.0.0-SNAPSHOT
-PROFILES=" -P163 -Pspring -Papache -Pmaven2"
+PROFILES=" -Paliyun -Pspring -Papache -Pmaven2 -P163"
 
 mvn install:install-file \
         -Dfile=./pom.xml \
@@ -13,6 +13,11 @@ mvn install:install-file \
         -Dpackaging=pom
 
 parents=(
+    framewk-benchmark
+    framewk-net
+    framewk-service
+    java-standard
+    stream
 )
 for p in ${parents[@]}; do
     cd ${p} && \

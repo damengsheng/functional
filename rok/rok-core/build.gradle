@@ -3,7 +3,7 @@ plugins {
     id 'application'
     id 'maven-publish'
     id 'distribution'
-    id "org.jetbrains.intellij" version "0.4.10"    /* https://github.com/JetBrains/gradle-intellij-plugin */
+    id "org.jetbrains.intellij" version "0.4.12"    /* https://github.com/JetBrains/gradle-intellij-plugin */
     id "org.jetbrains.grammarkit" version "2019.3"  /* https://github.com/JetBrains/gradle-grammar-kit-plugin */
 }
 
@@ -19,11 +19,22 @@ repositories {
 }
 
 ext {
-    javaparser_version = "3.15.2"
+    javaparser_version = "3.15.5"
     javapoet_version = "1.11.1"
-    idea_version='2019.2.3'
+    idea_version='2019.2.4'
+    moduleName = 'rok-core'
 }
 
+/**
+
+http://jetbrains.bintray.com/intellij-jbr/
+
+ * /Volumes/To/repos/gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC
+ *
+ * rget -n 50 https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIC/2019.2.4/ideaIC-2019.2.4.zip
+ *
+ * rget -n 60 https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIC/2019.2.4/ideaIC-2019.2.4-sources.jar
+ */
 dependencies {
 
     implementation "com.github.javaparser:javaparser-core-serialization:${javaparser_version}"
@@ -34,10 +45,6 @@ dependencies {
 }
 
 group = 'rok'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11
-ext.moduleName = 'rok-core'
 
 publishing {
     publications {
@@ -51,28 +58,10 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
 
-
-compileJava {
-    doFirst {
-        options.compilerArgs = [
-                '--enable-preview',
-                '--module-path', classpath.asPath,
-                '--add-exports', 'jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED',
-                '--add-exports', 'jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
-                '--add-exports', 'jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED',
-                '--add-exports', 'jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED',
-                '--add-exports', 'jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED',
-        ]
-        classpath = files()
-    }
-}
-
-
 intellij {
 
     pluginName = 'rok'
     type = 'IC'
     version = "IC-${idea_version}"
-    sandboxDirectory = "/Volumes/To/dev/idea-sandbox/idea-rok-${idea_version}"
-
+    sandboxDirectory = "/Volumes/sm/repos/idea-sandbox/idea-rok-${idea_version}"
 }

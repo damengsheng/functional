@@ -22,7 +22,7 @@
 
         <asm.version>7.2</asm.version>
         <cglib.version>3.3.0</cglib.version>
-        <bytebuddy.version>1.10.2</bytebuddy.version>
+        <bytebuddy.version>1.10.3</bytebuddy.version>
         <byteman.version>4.0.8</byteman.version>
         <javassist.version>3.26.0-GA</javassist.version>
         <cfr.version>0.141</cfr.version>
