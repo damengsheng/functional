@@ -91,7 +91,7 @@ void printf_chars()
     char a;
 
     a = 65;
-    printf("65 %c\n", a);
+    printf("65 %src\n", a);
 
     a = 'A';
     printf("A %hhd\n", a);

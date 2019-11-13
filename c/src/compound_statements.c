@@ -1,5 +1,5 @@
 //
-//  statements.c
+//  compound_statements.c
 //  基本语句
 //
 //  Created by yakir on 2019/2/25.
@@ -70,7 +70,7 @@ void flow_for()
     char ch = 'a';
     for (; ch <= 'z'; ch++)
     {
-        printf("%c %u \n", ch, ch);
+        printf("%src %u \n", ch, ch);
     }
 }
 
