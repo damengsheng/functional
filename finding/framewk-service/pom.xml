@@ -15,8 +15,35 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <properties>
+        <dubbo.version>2.7.5-SNAPSHOT</dubbo.version>
+        <springboot.version>2.2.2.RELEASE</springboot.version>
+        <grpc.version>1.26.0</grpc.version>
+        <grpc.protos.version>1.17.0</grpc.protos.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.yakirchen</groupId>
+                <artifactId>framewk-service-grpc-proto</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <modules>
         <module>framewk-service-graphql</module>
         <module>framewk-service-quarkus</module>
+        <module>framewk-service-grpc-proto</module>
+        <module>framewk-service-grpc-server</module>
+        <module>framewk-service-grpc-client</module>
+        <module>framewk-service-grpc-facade</module>
+        <module>framewk-service-dubbo</module>
+        <!--        <module>framewk-service-dubbo-facade</module>-->
+        <!--        <module>framewk-service-dubbo-anno-consumer</module>-->
+        <!--        <module>framewk-service-dubbo-anno-provider</module>-->
+        <!--        <module>framewk-service-dubbo-consumer</module>-->
+        <!--        <module>framewk-service-dubbo-provider</module>-->
     </modules>
 </project>

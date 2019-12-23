@@ -1,0 +1,27 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder/>
+
+    <bean id="helloService" class="framewk.dubbo.service.HelloService"/>
+    <bean id="helloServiceGeneric" class="framewk.dubbo.service.HelloGenericService"/>
+
+    <dubbo:application name="FramewkServiceDubbo"/>
+
+    <dubbo:protocol name="dubbo" port="20880" serialization="hessian2"/>
+
+    <dubbo:provider timeout="6000000"/>
+
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <dubbo:service interface="framewk.dubbo.facde.Greeting" ref="helloService"/>
+    <dubbo:service interface="framewk.dubbo.facde.Greeting" ref="helloServiceGeneric"/>
+
+    <dubbo:reference timeout="6000000" check="true" interface="framewk.dubbo.facde.Greeting"/>
+
+</beans>

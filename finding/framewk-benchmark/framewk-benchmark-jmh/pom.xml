@@ -110,6 +110,45 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>jdk8</id>
+            <properties>
+                <java.version>1.8</java.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>JMHSample</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <mainClass>framwk.benchmark.jmh.sample.JMHSample</mainClass>
+            </properties>
+            <build>
+                <finalName>JMHSample</finalName>
+            </build>
+        </profile>
+        <profile>
+            <id>MethodHandleVSInvocation</id>
+            <properties>
+                <mainClass>framwk.benchmark.jmh.reflection.MethodHandleVSInvocation</mainClass>
+            </properties>
+            <build>
+                <finalName>MethodHandleVSInvocation</finalName>
+            </build>
+        </profile>
+        <profile>
+            <id>StringPlusBenchmark</id>
+            <properties>
+                <mainClass>framwk.benchmark.jmh.StringPlusBenchmark</mainClass>
+            </properties>
+            <build>
+                <finalName>StringPlusBenchmark</finalName>
+            </build>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
@@ -118,29 +157,31 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>libs/</classpathPrefix>
+                            <mainClass>${mainClass}</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>package</phase>
+                        <id>copy-dependencies</id>
+                        <phase>prepare-package</phase>
                         <goals>
-                            <goal>shade</goal>
+                            <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>framwk.benchmark.jmh.JMHSample</mainClass>
-                                </transformer>
-                            </transformers>
-                            <filters>
-                                <filter>
-                                    <artifact>*:*</artifact>
-                                    <excludes>
-                                        <exclude>META-INF/*.SF</exclude>
-                                        <exclude>META-INF/*.DSA</exclude>
-                                        <exclude>META-INF/*.RSA</exclude>
-                                    </excludes>
-                                </filter>
-                            </filters>
+                            <outputDirectory>
+                                ${project.build.directory}/libs
+                            </outputDirectory>
                         </configuration>
                     </execution>
                 </executions>

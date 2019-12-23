@@ -61,6 +61,8 @@ public class EchoClient {
                 .map(_args -> _args[0])
                 .map(Integer::valueOf)
                 .orElse(Inet.SERVER_NETTY_ECHO);
+
+        port = 3306;
         log.info("client connect [{}]", port);
         new EchoClient().build(port);
     }

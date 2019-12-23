@@ -1,3 +1,5 @@
 rootProject.name = 'rok'
 
-include("rok-core")
+include ':rok-common',
+        ':rok-processor',
+        ':rok-intellij'

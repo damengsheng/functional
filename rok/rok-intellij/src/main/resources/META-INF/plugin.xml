@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>rok.intellij.plugin</id>
+    <name>RokIntellijPlugin</name>
+    <version>1.0</version>
+    <vendor url="https://yakirchen.github.io">Rok</vendor>
+    <description>
+        Rok: Intellij Plugin, Author: yakirChen 🖖
+    </description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <actions>
+        <action class="rok.intellij.HelloAction" id="SayHello" text="Say Hello">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
+    </actions>
+
+</idea-plugin>

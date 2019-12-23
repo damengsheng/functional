@@ -36,6 +36,13 @@
                 <jfx.version>13.0.1</jfx.version>
             </properties>
         </profile>
+        <profile>
+            <id>14</id>
+            <properties>
+                <java.version>14</java.version>
+                <jfx.version>14-ea+4</jfx.version>
+            </properties>
+        </profile>
     </profiles>
 
     <dependencyManagement>

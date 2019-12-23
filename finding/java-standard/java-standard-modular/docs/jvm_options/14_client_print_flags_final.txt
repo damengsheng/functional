@@ -17,6 +17,7 @@
      intx AllocatePrefetchLines                              [ 1                         ...                        64 ]                            {product} {default}
      intx AllocatePrefetchStepSize                           [ 1                         ...                       512 ]                            {product} {default}
      intx AllocatePrefetchStyle                              [ 0                         ...                         3 ]                            {product} {default}
+     intx ArchiveRelocationMode                              [ 0                         ...                         2 ]                         {diagnostic} {default}
    size_t ArrayAllocatorMallocLimit                          [                           ...                           ]                       {experimental} {default}
      intx ArrayCopyLoadStoreMaxElem                          [ 0                         ...       9223372036854775807 ]                         {C2 product} {default}
      intx AutoBoxCacheMax                                    [ 0                         ...                2147483647 ]                         {C2 product} {default}
@@ -28,51 +29,6 @@
      intx BiasedLockingStartupDelay                          [ 0                         ...                2147483640 ]                            {product} {default}
      intx BlockLayoutMinDiamondPercentage                    [ 0                         ...                       100 ]                         {C2 product} {default}
      intx CICompilerCount                                    [ 0                         ...                2147483647 ]                            {product} {ergonomic}
-    uintx CMSAbortablePrecleanMinWorkPerIteration            [ 0                         ...      18446744073709551615 ]                            {product} {default}
-     intx CMSAbortablePrecleanWaitMillis                     [ 0                         ...       9223372036854775807 ]                         {manageable} {default}
-   size_t CMSBitMapYieldQuantum                              [ 1                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSBootstrapOccupancy                              [ 0                         ...                       100 ]                            {product} {default}
-    uintx CMSClassUnloadingMaxInterval                       [ 0                         ...      18446744073709551615 ]                            {product} {default}
-   size_t CMSConcMarkMultiple                                [ 1                         ...          4503599627370495 ]                            {product} {default}
-    uintx CMSCoordinatorYieldSleepCount                      [ 0                         ...                4294967295 ]                            {product} {default}
-    uintx CMSExpAvgFactor                                    [ 0                         ...                       100 ]                            {product} {default}
-    uintx CMSIncrementalSafetyFactor                         [ 0                         ...                       100 ]                            {product} {default}
-    uintx CMSIndexedFreeListReplenish                        [ 1                         ...      18446744073709551615 ]                            {product} {default}
-     intx CMSInitiatingOccupancyFraction                     [ -9223372036854775808      ...                       100 ]                            {product} {default}
-    uintx CMSIsTooFullPercentage                             [ 0                         ...                       100 ]                            {product} {default}
-   double CMSLargeCoalSurplusPercent                         [ 0.000                     ... 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000 ]                           {product} {default}
-   double CMSLargeSplitSurplusPercent                        [ 0.000                     ... 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000 ]                           {product} {default}
-    uintx CMSMaxAbortablePrecleanLoops                       [ 0                         ...      18446744073709551615 ]                            {product} {default}
-     intx CMSMaxAbortablePrecleanTime                        [ 0                         ...       9223372036854775807 ]                            {product} {default}
-   size_t CMSOldPLABMax                                      [ 1                         ...      18446744073709551615 ]                            {product} {default}
-   size_t CMSOldPLABMin                                      [ 1                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSOldPLABNumRefills                               [ 1                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSOldPLABReactivityFactor                         [ 1                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSOldPLABToleranceFactor                          [ 1                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSPrecleanDenominator                             [ 1                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSPrecleanIter                                    [ 0                         ...                         9 ]                            {product} {default}
-    uintx CMSPrecleanNumerator                               [ 0                         ...      18446744073709551614 ]                            {product} {default}
-    uintx CMSPrecleanThreshold                               [ 100                       ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSRemarkVerifyVariant                             [ 1                         ...                         2 ]                            {product} {default}
-   size_t CMSRescanMultiple                                  [ 1                         ...          4503599627370495 ]                            {product} {default}
-    uintx CMSSamplingGrain                                   [ 8                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSScheduleRemarkEdenPenetration                   [ 0                         ...                       100 ]                            {product} {default}
-   size_t CMSScheduleRemarkEdenSizeThreshold                 [ 0                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMSScheduleRemarkSamplingRatio                     [ 1                         ...      18446744073709551615 ]                            {product} {default}
-   double CMSSmallCoalSurplusPercent                         [ 0.000                     ... 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000 ]                           {product} {default}
-   double CMSSmallSplitSurplusPercent                        [ 0.000                     ... 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000 ]                           {product} {default}
-     intx CMSTriggerInterval                                 [ -1                        ...       9223372036854775807 ]                         {manageable} {default}
-    uintx CMSTriggerRatio                                    [ 0                         ...                       100 ]                            {product} {default}
-     intx CMSWaitDuration                                    [ -2147483648               ...                2147483647 ]                         {manageable} {default}
-    uintx CMSWorkQueueDrainThreshold                         [ 1                         ...                4294967295 ]                            {product} {default}
-    uintx CMSYieldSleepCount                                 [ 0                         ...                4294967295 ]                            {product} {default}
-   size_t CMSYoungGenPerWorker                               [ 1                         ...      18446744073709551615 ]                         {pd product} {default}
-    uintx CMS_FLSPadding                                     [ 0                         ...                4294967295 ]                            {product} {default}
-    uintx CMS_FLSWeight                                      [ 0                         ...                       100 ]                            {product} {default}
-    uintx CMS_SweepPadding                                   [ 0                         ...                4294967295 ]                            {product} {default}
-    uintx CMS_SweepTimerThresholdMillis                      [ 0                         ...      18446744073709551615 ]                            {product} {default}
-    uintx CMS_SweepWeight                                    [ 0                         ...                       100 ]                            {product} {default}
-    uintx CPUForCMSThread                                    [ 0                         ...                4294967295 ]                         {diagnostic} {default}
     uintx CodeCacheExpansionSize                             [ 32768                     ...      18446744073709551615 ]                         {pd product} {default}
     uintx CodeCacheMinBlockLength                            [ 1                         ...                       100 ]                      {pd diagnostic} {default}
      intx CompileThreshold                                   [ -9223372036854775808      ...       9223372036854775807 ]                         {pd product} {default}
@@ -95,8 +51,6 @@
    size_t ErgoHeapSizeLimit                                  [ 0                         ...      18446744073709551615 ]                            {product} {default}
  uint64_t ErrorLogTimeout                                    [ 0                         ...          9223372036854775 ]                            {product} {default}
    double EscapeAnalysisTimeout                              [ 0.000                     ... 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000 ]                        {C2 product} {default}
-    uintx FLSCoalescePolicy                                  [ 0                         ...                         4 ]                            {product} {default}
-   double FLSLargestBlockCoalesceProximity                   [ 0.000                     ...                     1.000 ]                            {product} {default}
      intx FieldsAllocationStyle                              [ 0                         ...                         2 ]                            {product} {default}
      intx FreqInlineSize                                     [ 0                         ...                2147483647 ]                         {pd product} {default}
    size_t G1AdaptiveIHOPNumInitialSamples                    [ 1                         ...       9223372036854775807 ]                       {experimental} {default}
@@ -138,7 +92,6 @@
     uintx GCLockerEdenExpansionPercent                       [ 0                         ...                       100 ]                            {product} {default}
     uintx GCLockerRetryAllocationCount                       [ 0                         ...      18446744073709551615 ]                         {diagnostic} {default}
     uintx GCPauseIntervalMillis                              [ 0                         ...      18446744073709551615 ]                            {product} {default}
-     uint GCTaskTimeStampEntries                             [ 1                         ...                2147483647 ]                            {product} {default}
     uintx GCTimeLimit                                        [ 0                         ...                       100 ]                            {product} {default}
     uintx GCTimeRatio                                        [ 0                         ...                4294967295 ]                            {product} {default}
      intx GuaranteedSafepointInterval                        [ 0                         ...                2147483647 ]                         {diagnostic} {default}
@@ -253,15 +206,11 @@
      intx ObjectAlignmentInBytes                             [ 8                         ...                       256 ]                       {lp64_product} {default}
    double ObjectCountCutOffPercent                           [ 0.000                     ...                   100.000 ]                       {experimental} {default}
    size_t OldPLABSize                                        [ 0                         ...      18446744073709551615 ]                            {product} {default}
-    uintx OldPLABWeight                                      [ 0                         ...                       100 ]                            {product} {default}
    size_t OldSize                                            [ 0                         ...      18446744073709551615 ]                            {product} {default}
      intx OnStackReplacePercentage                           [ -9223372036854775808      ...       9223372036854775807 ]                         {pd product} {default}
      intx OptoLoopAlignment                                  [ 1                         ...                        16 ]                         {pd product} {default}
     uintx PLABWeight                                         [ 0                         ...                       100 ]                            {product} {default}
       int ParGCArrayScanChunk                                [ 1                         ...                 715827882 ]                            {product} {default}
-     intx ParGCCardsPerStrideChunk                           [ 1                         ...       9223372036854775807 ]                         {diagnostic} {default}
-    uintx ParGCDesiredObjsFromOverflowList                   [ 0                         ...      18446744073709551615 ]                            {product} {default}
-    uintx ParGCStridesPerThread                              [ 1                         ...      18446744073709551615 ]                         {diagnostic} {default}
     uintx ParallelGCBufferWastePct                           [ 0                         ...                       100 ]                            {product} {default}
      uint ParallelGCThreads                                  [ 0                         ...                4294967295 ]                            {product} {default}
    size_t ParallelOldDeadWoodLimiterMean                     [ 0                         ...                       100 ]                            {product} {default}
@@ -330,7 +279,12 @@
      intx ThreadPriorityPolicy                               [ 0                         ...                         1 ]                            {product} {default}
      intx ThreadStackSize                                    [ 0                         ...                   1048576 ]                         {pd product} {default}
     uintx ThresholdTolerance                                 [ 0                         ...                       100 ]                            {product} {default}
+     intx Tier0AOTBackEdgeThreshold                          [ 0                         ...                2147483647 ]                         {diagnostic} {default}
+     intx Tier0AOTCompileThreshold                           [ 0                         ...                2147483647 ]                         {diagnostic} {default}
+     intx Tier0AOTInvocationThreshold                        [ 0                         ...                2147483647 ]                         {diagnostic} {default}
+     intx Tier0AOTMinInvocationThreshold                     [ 0                         ...                2147483647 ]                         {diagnostic} {default}
      intx Tier0BackedgeNotifyFreqLog                         [ 0                         ...                        30 ]                            {product} {default}
+     intx Tier0Delay                                         [ 0                         ...                2147483647 ]                         {diagnostic} {default}
      intx Tier0InvokeNotifyFreqLog                           [ 0                         ...                        30 ]                            {product} {default}
      intx Tier0ProfilingStartPercentage                      [ 0                         ...                2147483647 ]                            {product} {default}
      intx Tier23InlineeNotifyFreqLog                         [ 0                         ...                        30 ]                            {product} {default}
@@ -351,6 +305,10 @@
      intx Tier3InvokeNotifyFreqLog                           [ 0                         ...                        30 ]                            {product} {default}
      intx Tier3LoadFeedback                                  [ 0                         ...                2147483647 ]                            {product} {default}
      intx Tier3MinInvocationThreshold                        [ 0                         ...                2147483647 ]                            {product} {default}
+     intx Tier40BackEdgeThreshold                            [ 0                         ...                2147483647 ]                         {diagnostic} {default}
+     intx Tier40CompileThreshold                             [ 0                         ...                2147483647 ]                         {diagnostic} {default}
+     intx Tier40InvocationThreshold                          [ 0                         ...                2147483647 ]                         {diagnostic} {default}
+     intx Tier40MinInvocationThreshold                       [ 0                         ...                2147483647 ]                         {diagnostic} {default}
      intx Tier4BackEdgeThreshold                             [ 0                         ...                2147483647 ]                            {product} {default}
      intx Tier4CompileThreshold                              [ 0                         ...                2147483647 ]                            {product} {default}
      intx Tier4InvocationThreshold                           [ 0                         ...                2147483647 ]                            {product} {default}
@@ -385,4 +343,10 @@
     uintx YoungGenerationSizeSupplement                      [ 0                         ...                       100 ]                            {product} {default}
     uintx YoungGenerationSizeSupplementDecay                 [ 1                         ...      18446744073709551615 ]                            {product} {default}
    size_t YoungPLABSize                                      [ 0                         ...      18446744073709551615 ]                            {product} {default}
+   double ZAllocationSpikeTolerance                          [                           ...                           ]                       {experimental} {default}
+     uint ZCollectionInterval                                [                           ...                           ]                       {experimental} {default}
+   double ZFragmentationLimit                                [                           ...                           ]                       {experimental} {default}
+   size_t ZMarkStackSpaceLimit                               [ 33554432                  ...             1099511627776 ]                       {experimental} {default}
+     uint ZStatisticsInterval                                [ 1                         ...                4294967295 ]                         {diagnostic} {default}
+    uintx ZUncommitDelay                                     [                           ...                           ]                       {experimental} {default}
      intx hashCode                                           [                           ...                           ]                       {experimental} {default}

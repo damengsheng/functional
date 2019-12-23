@@ -22,8 +22,8 @@
 
         <asm.version>7.2</asm.version>
         <cglib.version>3.3.0</cglib.version>
-        <bytebuddy.version>1.10.3</bytebuddy.version>
-        <byteman.version>4.0.8</byteman.version>
+        <bytebuddy.version>1.10.6</bytebuddy.version>
+        <byteman.version>4.0.9</byteman.version>
         <javassist.version>3.26.0-GA</javassist.version>
         <cfr.version>0.141</cfr.version>
     </properties>
@@ -150,36 +150,34 @@
 
     <profiles>
         <profile>
-            <id>instAgent</id>
+            <id>agent</id>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jar-plugin</artifactId>
+                        <artifactId>maven-assembly-plugin</artifactId>
                         <executions>
                             <execution>
-                                <phase>package</phase>
                                 <goals>
-                                    <goal>jar</goal>
+                                    <goal>single</goal>
                                 </goals>
+                                <phase>package</phase>
                                 <configuration>
-                                    <classifier>agent</classifier>
-                                    <classesDirectory>target/classes</classesDirectory>
+                                    <descriptorRefs>
+                                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                                    </descriptorRefs>
                                     <archive>
-                                        <manifest>
-                                            <addClasspath>true</addClasspath>
-                                        </manifest>
                                         <manifestEntries>
-                                            <Premain-Class>yakir.agent.AsmAgent</Premain-Class>
-                                            <Agent-Class>yakir.agent.AsmAgent</Agent-Class>
+                                            <Premain-Class>com.taobao.arthas.agent.AgentBootstrap</Premain-Class>
+                                            <Agent-Class>com.taobao.arthas.agent.AgentBootstrap</Agent-Class>
                                             <Can-Redefine-Classes>true</Can-Redefine-Classes>
                                             <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                                            <Specification-Title>${project.name}</Specification-Title>
+                                            <Specification-Version>${project.version}</Specification-Version>
+                                            <Implementation-Title>${project.name}</Implementation-Title>
+                                            <Implementation-Version>${project.version}</Implementation-Version>
                                         </manifestEntries>
                                     </archive>
-                                    <includes>
-                                        <include>yakir/agent/AsmAgent.class</include>
-                                        <include>yakir/agent/AsmTransformer.class</include>
-                                    </includes>
                                 </configuration>
                             </execution>
                         </executions>

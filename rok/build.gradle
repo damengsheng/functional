@@ -1,11 +1,11 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
 repositories {
     mavenLocal()
     maven {
-        url = 'https://maven.aliyun.com/nexus/content/groups/public'
+        url = 'https://maven.aliyun.com/repository/central'
     }
 
     maven {
@@ -13,7 +13,11 @@ repositories {
     }
 }
 
+compileJava {
+
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 group = 'rok'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11

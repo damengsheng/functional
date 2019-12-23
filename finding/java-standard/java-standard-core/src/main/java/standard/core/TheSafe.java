@@ -20,24 +20,21 @@ public class TheSafe {
 
     public void theSafe(TheSafe theSafe) throws Throwable {
 
-        MethodType methodType = MethodType.methodType(String.class, String.class);
-        MethodHandle methodHandle = MethodHandles.publicLookup()
-                .findVirtual(TheSafe.class, "hello", methodType);
-        Object greeting0 = methodHandle.invoke(theSafe, "yakir");
-        String greeting  = greeting0.toString();
+        MethodType   methodType   = MethodType.methodType(String.class, String.class);
+        MethodHandle methodHandle = MethodHandles.publicLookup().findVirtual(TheSafe.class, "hello", methodType);
+        Object       greeting0    = methodHandle.invoke(theSafe, "yakir");
+        String       greeting     = greeting0.toString();
         System.out.println(greeting);
 
-        methodType = MethodType.methodType(String.class, String.class);
-        methodHandle = MethodHandles.publicLookup()
-                .findVirtual(TheSafe.class, "hello", methodType);
-        String greeting1 = (String) methodHandle.invokeExact(theSafe, "yakirChen");
+        MethodType   methodType1   = MethodType.methodType(String.class, String.class);
+        MethodHandle methodHandle1 = MethodHandles.publicLookup().findVirtual(TheSafe.class, "hello", methodType1);
+        String       greeting1     = (String) methodHandle1.invokeExact(theSafe, "yakirChen");
         System.out.println(greeting1);
     }
 
     public String hello(String name) {
         return "hello ".concat(name).concat(" !");
     }
-
 
     public List<Map<String, Object>> greeting(String name, String myName, List<Map<String, Object>> data) {
 
@@ -52,11 +49,10 @@ public class TheSafe {
         map.put("one", 1);
         data.add(map);
 
-        MethodType methodType = MethodType.methodType(List.class, String.class, String.class, List.class);
-        MethodHandle methodHandle = MethodHandles.publicLookup()
-                .findVirtual(TheSafe.class, "greeting", methodType);
-        Object greeting0 = methodHandle.invoke(theSafe, "yakir", "yakirChen", data);
-        String greeting  = greeting0.toString();
+        MethodType   methodType   = MethodType.methodType(List.class, String.class, String.class, List.class);
+        MethodHandle methodHandle = MethodHandles.publicLookup().findVirtual(TheSafe.class, "greeting", methodType);
+        Object       greeting0    = methodHandle.invoke(theSafe, "yakir", "yakirChen", data);
+        String       greeting     = greeting0.toString();
         System.out.println(greeting);
     }
 

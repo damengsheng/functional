@@ -14,18 +14,12 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <gatling.version>3.3.0</gatling.version>
+        <gatling.version>3.3.1</gatling.version>
         <gatling.maven.plugin.version>3.0.5</gatling.maven.plugin.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>io.gatling</groupId>
-                <artifactId>gatling-parent</artifactId>
-                <version>${gatling.version}</version>
-                <type>pom</type>
-            </dependency>
             <dependency>
                 <groupId>io.gatling.highcharts</groupId>
                 <artifactId>gatling-charts-highcharts</artifactId>
@@ -33,7 +27,22 @@
             </dependency>
             <dependency>
                 <groupId>io.gatling</groupId>
+                <artifactId>gatling-http</artifactId>
+                <version>${gatling.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-netty-util</artifactId>
+                <version>${gatling.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.gatling</groupId>
                 <artifactId>gatling-recorder</artifactId>
+                <version>${gatling.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-jdbc</artifactId>
                 <version>${gatling.version}</version>
             </dependency>
         </dependencies>
@@ -47,6 +56,8 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>src/main/scala</sourceDirectory>
+        <testSourceDirectory>src/test/scala</testSourceDirectory>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -56,6 +67,33 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>4.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <configuration>
+                            <jvmArgs>
+                                <jvmArg>-Xss100M</jvmArg>
+                            </jvmArgs>
+                            <args>
+                                <arg>-target:jvm-1.8</arg>
+                                <arg>-deprecation</arg>
+                                <arg>-feature</arg>
+                                <arg>-unchecked</arg>
+                                <arg>-language:implicitConversions</arg>
+                                <arg>-language:postfixOps</arg>
+                            </args>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
     <profiles>
@@ -67,17 +105,12 @@
                         <groupId>io.gatling</groupId>
                         <artifactId>gatling-maven-plugin</artifactId>
                         <configuration>
-                            <simulationClass>io.github.yakirchen.gatling.BasticSimulation</simulationClass>
-                            <runDescription>This-is-the-run-description
-                            </runDescription>             <!-- short text that will be displayed in the HTML reports -->
-                            <skip>false
-                            </skip>                                                       <!-- skip executing this plugin -->
-                            <failOnError>true
-                            </failOnError>                                          <!-- report failure in case of assertion failure, typically to fail CI pipeline -->
-                            <continueOnAssertionFailure>false
-                            </continueOnAssertionFailure>           <!-- keep on executing multiple simulations even if one fails -->
-                            <useOldJenkinsJUnitSupport>false
-                            </useOldJenkinsJUnitSupport>             <!-- report results to Jenkins JUnit support (workaround until we manage to get Gatling support into Jenkins) -->
+                            <simulationClass>framwk.benchmark.galting.simulation.GraphqlSimulation</simulationClass>
+                            <runDescription>graphql-model-load-request</runDescription>   <!-- short text that will be displayed in the HTML reports -->
+                            <skip>false</skip>                                             <!-- skip executing this plugin -->
+                            <failOnError>true</failOnError>                                <!-- report failure in case of assertion failure, typically to fail CI pipeline -->
+                            <continueOnAssertionFailure>false</continueOnAssertionFailure> <!-- keep on executing multiple simulations even if one fails -->
+                            <useOldJenkinsJUnitSupport>false</useOldJenkinsJUnitSupport>   <!-- report results to Jenkins JUnit support (workaround until we manage to get Gatling support into Jenkins) -->
                             <jvmArgs>
                                 <jvmArg>-server</jvmArg>
                                 <jvmArg>-ea</jvmArg>
@@ -111,11 +144,11 @@
                                 <jvmArg>-Dgatling.http.ahc.pooledConnectionIdleTimeout=6000000</jvmArg>
                                 <jvmArg>-Dgatling.http.ahc.readTimeout=6000000</jvmArg>
                             </jvmArgs>
-                            <overrideJvmArgs>false
-                            </overrideJvmArgs>                                 <!-- if above option should override the defaults instead of replacing them -->
-                            <propagateSystemProperties>true
-                            </propagateSystemProperties>              <!-- if System properties from the maven JVM should be propagated to the Gatling forked one -->
-                            <resultsFolder>/Volumes/To/logs/gatling</resultsFolder>
+                            <overrideJvmArgs>false</overrideJvmArgs>                     <!-- if above option should override the defaults instead of replacing them -->
+                            <propagateSystemProperties>true</propagateSystemProperties>  <!-- if System properties from the maven JVM should be propagated to the Gatling forked one -->
+                            <resultsFolder>/Volumes/sm/logs/gatling</resultsFolder>
+                            <!--                    <simulationsFolder>${project.basedir}/src/test/framwk/benchmark/galting/simulation</simulationsFolder> &lt;!&ndash; where the simulations to be compiled are located &ndash;&gt;-->
+                            <!--                    <resourcesFolder>${project.basedir}/src/test/resources</resourcesFolder> &lt;!&ndash; where the test resources are located &ndash;&gt;-->
                         </configuration>
                         <executions>
                             <execution>
@@ -130,4 +163,5 @@
             </build>
         </profile>
     </profiles>
+
 </project>

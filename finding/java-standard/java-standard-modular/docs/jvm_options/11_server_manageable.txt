@@ -1,0 +1,11 @@
+     intx CMSAbortablePrecleanWaitMillis           = 100                                    {manageable} {default}
+     intx CMSTriggerInterval                       = -1                                     {manageable} {default}
+     intx CMSWaitDuration                          = 2000                                   {manageable} {default}
+     bool HeapDumpAfterFullGC                      = false                                  {manageable} {default}
+     bool HeapDumpBeforeFullGC                     = false                                  {manageable} {default}
+     bool HeapDumpOnOutOfMemoryError               = false                                  {manageable} {default}
+    ccstr HeapDumpPath                             =                                        {manageable} {default}
+    uintx MaxHeapFreeRatio                         = 70                                     {manageable} {default}
+    uintx MinHeapFreeRatio                         = 40                                     {manageable} {default}
+     bool PrintClassHistogram                      = false                                  {manageable} {default}
+     bool PrintConcurrentLocks                     = false                                  {manageable} {default}

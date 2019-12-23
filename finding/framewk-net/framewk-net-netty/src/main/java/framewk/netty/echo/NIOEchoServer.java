@@ -23,7 +23,7 @@ import static framewk.netty.utils.Inet.SERVER_NETTY_ECHO;
 /**
  * NIOEchoServer
  *
- * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 04/05/2019 00:04.
+ * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2019/04/05 00:04.
  */
 public class NIOEchoServer {
 

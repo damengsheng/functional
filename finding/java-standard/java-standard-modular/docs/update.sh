@@ -19,10 +19,12 @@ function print_flags() {
   if [[ "${i}" == "1.8" ]]; then
       /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -version > jvm_options/${i}_${jvm_edition}_print_flags_initial.txt
       /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version > jvm_options/${i}_${jvm_edition}_print_flags_final.txt
+      /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -XX:+PrintFlagsFinal -version | grep manageable > jvm_options/${i}_${jvm_edition}_manageable.txt
   else
       /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -XX:+PrintFlagsRanges -version > jvm_options/${i}_${jvm_edition}_print_flags_initial.txt
       /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -XX:+PrintFlagsRanges -version > jvm_options/${i}_${jvm_edition}_print_flags_final.txt
       /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -XX:+PrintFlagsFinal -XX:+PrintFlagsRanges -version > jvm_options/${i}_${jvm_edition}_print_flags_init_final.txt
+      /usr/libexec/java_home -v ${2} --exec java -${jvm_edition} -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsInitial -XX:+PrintFlagsFinal -version | grep manageable > jvm_options/${i}_${jvm_edition}_manageable.txt
   fi
 
 }

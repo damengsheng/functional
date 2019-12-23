@@ -23,9 +23,9 @@
         <maven.compiler.optimize>true</maven.compiler.optimize>
 
         <maven.assembly.version>3.2.0</maven.assembly.version>
-        <maven.surefire.version>3.0.0-M3</maven.surefire.version>
-        <maven.enforcer.version>3.0.0-M2</maven.enforcer.version>
-        <maven.source.version>3.2.0</maven.source.version>
+        <maven.surefire.version>3.0.0-M4</maven.surefire.version>
+        <maven.enforcer.version>3.0.0-M3</maven.enforcer.version>
+        <maven.source.version>3.2.1</maven.source.version>
         <maven.clean.version>3.1.0</maven.clean.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.install.version>3.0.0-M1</maven.install.version>
@@ -40,16 +40,14 @@
         <maven.toolchains.version>3.0.0</maven.toolchains.version>
         <maven.war.version>3.2.3</maven.war.version>
         <maven.versions.version>2.7</maven.versions.version>
-        <maven.failsafe.version>3.0.0-M3</maven.failsafe.version>
+        <maven.failsafe.version>3.0.0-M4</maven.failsafe.version>
         <maven.clean.version>3.1.0</maven.clean.version>
         <maven.deploy.version>3.0.0-M1</maven.deploy.version>
-        <maven.failsafe.version>3.0.0-M3</maven.failsafe.version>
         <maven.install.version>3.0.0-M1</maven.install.version>
         <maven.resources.version>3.1.0</maven.resources.version>
         <maven.site.version>3.8.2</maven.site.version>
-        <maven.surefire.version>3.0.0-M3</maven.surefire.version>
         <maven.verifier.version>1.1</maven.verifier.version>
-        <maven.ear.version>3.0.1</maven.ear.version>
+        <maven.ear.version>3.0.2</maven.ear.version>
         <maven.ejb.version>3.0.1</maven.ejb.version>
         <maven.rar.version>2.4</maven.rar.version>
         <maven.war.version>3.2.3</maven.war.version>
@@ -68,11 +66,10 @@
         <maven.linkcheck.version>1.2</maven.linkcheck.version>
         <maven.pmd.version>3.12.0</maven.pmd.version>
         <maven.project.info.reports.version>3.0.0</maven.project.info.reports.version>
-        <maven.surefire.report.version>3.0.0-M3</maven.surefire.report.version>
+        <maven.surefire.report.version>3.0.0-M4</maven.surefire.report.version>
         <maven.antrun.version>1.8</maven.antrun.version>
         <maven.archetype.version>3.1.2</maven.archetype.version>
         <maven.dependency.version>3.1.1</maven.dependency.version>
-        <maven.enforcer.version>3.0.0-M2</maven.enforcer.version>
         <maven.gpg.version>1.6</maven.gpg.version>
         <maven.help.version>3.2.0</maven.help.version>
         <maven.invoker.version>3.2.1</maven.invoker.version>
@@ -102,13 +99,19 @@
         </os.detection.classifierWithLikes>
         <os.detected.arch>x86_64</os.detected.arch>
 
-        <protobuf.version>3.10.0</protobuf.version>
+        <protobuf.version>3.11.1</protobuf.version>
         <marshalling.version>2.0.9.Final</marshalling.version>
 
-        <slf4j.version>1.7.29</slf4j.version>
+        <javax.annotation.version>1.3.2</javax.annotation.version>
+        <guava.version>28.1-jre</guava.version>
+
+        <mysql.connector.version>8.0.18</mysql.connector.version>
+        <hikaricp.version>3.4.1</hikaricp.version>
+
+        <slf4j.version>1.7.30</slf4j.version>
         <logback.version>1.2.3</logback.version>
         <logback.ext.version>0.1.5</logback.ext.version>
-        <log4j.version>2.12.1</log4j.version>
+        <log4j.version>2.13.0</log4j.version>
 
         <junit5.platform.version>1.5.2</junit5.platform.version>
         <junit5.platform.surefire.version>1.3.2</junit5.platform.surefire.version>
@@ -117,10 +120,15 @@
     </properties>
 
     <modules>
-        <module>java-standard</module>
+        <module>basic</module>
         <module>framewk-net</module>
         <module>framewk-service</module>
         <module>framewk-benchmark</module>
+        <module>framewk-orm</module>
+        <module>java-standard</module>
+        <module>jvm-langs</module>
+        <module>jvm-diagnosis</module>
+        <module>message-queue</module>
         <module>search-engine</module>
         <module>stream</module>
     </modules>
@@ -149,6 +157,18 @@
                 <groupId>io.github.yakirchen</groupId>
                 <artifactId>java-standard-tools</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <!-- serialize -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java-util</artifactId>
+                <version>${protobuf.version}</version>
             </dependency>
 
             <!-- jackson -->

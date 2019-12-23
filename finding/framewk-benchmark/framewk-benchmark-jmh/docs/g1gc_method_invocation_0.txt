@@ -1,0 +1,1789 @@
+[0.024s][info][gc] Using G1
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/yakir/Developer/think/functional/finding/framewk-benchmark/framewk-benchmark-jmh/target/libs/jmh-core-1.22.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handle
+
+# Run progress: 0.00% complete, ETA 00:27:30
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.933 ns/op
+Iteration   2: 6.020 ns/op
+Iteration   3: 6.288 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handle":
+  6.080 ±(99.9%) 3.383 ns/op [Average]
+  (min, avg, max) = (5.933, 6.080, 6.288), stdev = 0.185
+  CI (99.9%): [2.697, 9.463] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExact
+
+# Run progress: 1.82% complete, ETA 00:27:16
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.876 ns/op
+Iteration   2: 5.775 ns/op
+Iteration   3: 5.433 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExact":
+  5.695 ±(99.9%) 4.237 ns/op [Average]
+  (min, avg, max) = (5.433, 5.695, 5.876), stdev = 0.232
+  CI (99.9%): [1.458, 9.932] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactInline
+
+# Run progress: 3.64% complete, ETA 00:26:46
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.695 ns/op
+Iteration   2: 3.359 ns/op
+Iteration   3: 2.445 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactInline":
+  2.833 ±(99.9%) 8.622 ns/op [Average]
+  (min, avg, max) = (2.445, 2.833, 3.359), stdev = 0.473
+  CI (99.9%): [≈ 0, 11.454] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitive
+
+# Run progress: 5.45% complete, ETA 00:26:15
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 5.574 ns/op
+Iteration   2: 5.861 ns/op
+Iteration   3: 5.109 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitive":
+  5.515 ±(99.9%) 6.931 ns/op [Average]
+  (min, avg, max) = (5.109, 5.515, 5.861), stdev = 0.380
+  CI (99.9%): [≈ 0, 12.446] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitiveInline
+
+# Run progress: 7.27% complete, ETA 00:25:45
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.668 ns/op
+Iteration   2: 2.375 ns/op
+Iteration   3: 2.374 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitiveInline":
+  2.472 ±(99.9%) 3.095 ns/op [Average]
+  (min, avg, max) = (2.374, 2.472, 2.668), stdev = 0.170
+  CI (99.9%): [≈ 0, 5.568] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleInline
+
+# Run progress: 9.09% complete, ETA 00:25:14
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 5.700 ns/op
+Iteration   2: 6.771 ns/op
+Iteration   3: 6.638 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleInline":
+  6.370 ±(99.9%) 10.653 ns/op [Average]
+  (min, avg, max) = (5.700, 6.370, 6.771), stdev = 0.584
+  CI (99.9%): [≈ 0, 17.023] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitive
+
+# Run progress: 10.91% complete, ETA 00:24:44
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.640 ns/op
+Iteration   2: 5.523 ns/op
+Iteration   3: 4.986 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitive":
+  5.383 ±(99.9%) 6.364 ns/op [Average]
+  (min, avg, max) = (4.986, 5.383, 5.640), stdev = 0.349
+  CI (99.9%): [≈ 0, 11.747] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitiveInline
+
+# Run progress: 12.73% complete, ETA 00:24:14
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.665 ns/op
+Iteration   2: 2.428 ns/op
+Iteration   3: 2.344 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitiveInline":
+  2.479 ±(99.9%) 3.039 ns/op [Average]
+  (min, avg, max) = (2.344, 2.479, 2.665), stdev = 0.167
+  CI (99.9%): [≈ 0, 5.518] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflected
+
+# Run progress: 14.55% complete, ETA 00:23:43
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 6.735 ns/op
+Iteration   2: 7.756 ns/op
+Iteration   3: 6.670 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflected":
+  7.054 ±(99.9%) 11.108 ns/op [Average]
+  (min, avg, max) = (6.670, 7.054, 7.756), stdev = 0.609
+  CI (99.9%): [≈ 0, 18.161] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExact
+
+# Run progress: 16.36% complete, ETA 00:23:14
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.797 ns/op
+Iteration   2: 6.059 ns/op
+Iteration   3: 5.443 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExact":
+  5.766 ±(99.9%) 5.642 ns/op [Average]
+  (min, avg, max) = (5.443, 5.766, 6.059), stdev = 0.309
+  CI (99.9%): [0.124, 11.409] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactInline
+
+# Run progress: 18.18% complete, ETA 00:22:43
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.686 ns/op
+Iteration   2: 2.643 ns/op
+Iteration   3: 2.469 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactInline":
+  2.599 ±(99.9%) 2.094 ns/op [Average]
+  (min, avg, max) = (2.469, 2.599, 2.686), stdev = 0.115
+  CI (99.9%): [0.505, 4.693] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitive
+
+# Run progress: 20.00% complete, ETA 00:22:13
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.537 ns/op
+Iteration   2: 5.408 ns/op
+Iteration   3: 4.928 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitive":
+  5.291 ±(99.9%) 5.861 ns/op [Average]
+  (min, avg, max) = (4.928, 5.291, 5.537), stdev = 0.321
+  CI (99.9%): [≈ 0, 11.152] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitiveInline
+
+# Run progress: 21.82% complete, ETA 00:21:43
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 2.656 ns/op
+Iteration   2: 2.344 ns/op
+Iteration   3: 2.335 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitiveInline":
+  2.445 ±(99.9%) 3.332 ns/op [Average]
+  (min, avg, max) = (2.335, 2.445, 2.656), stdev = 0.183
+  CI (99.9%): [≈ 0, 5.776] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedInline
+
+# Run progress: 23.64% complete, ETA 00:21:12
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 5.432 ns/op
+Iteration   2: 5.893 ns/op
+Iteration   3: 4.877 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedInline":
+  5.401 ±(99.9%) 9.284 ns/op [Average]
+  (min, avg, max) = (4.877, 5.401, 5.893), stdev = 0.509
+  CI (99.9%): [≈ 0, 14.684] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitive
+
+# Run progress: 25.45% complete, ETA 00:20:42
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.433 ns/op
+Iteration   2: 5.575 ns/op
+Iteration   3: 4.984 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitive":
+  5.331 ±(99.9%) 5.626 ns/op [Average]
+  (min, avg, max) = (4.984, 5.331, 5.575), stdev = 0.308
+  CI (99.9%): [≈ 0, 10.957] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitiveInline
+
+# Run progress: 27.27% complete, ETA 00:20:11
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.584 ns/op
+Iteration   2: 2.354 ns/op
+Iteration   3: 2.327 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitiveInline":
+  2.422 ±(99.9%) 2.569 ns/op [Average]
+  (min, avg, max) = (2.327, 2.422, 2.584), stdev = 0.141
+  CI (99.9%): [≈ 0, 4.991] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivate
+
+# Run progress: 29.09% complete, ETA 00:19:41
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 5.749 ns/op
+Iteration   2: 5.660 ns/op
+Iteration   3: 5.176 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivate":
+  5.528 ±(99.9%) 5.621 ns/op [Average]
+  (min, avg, max) = (5.176, 5.528, 5.749), stdev = 0.308
+  CI (99.9%): [≈ 0, 11.149] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivateInline
+
+# Run progress: 30.91% complete, ETA 00:19:13
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 2.794 ns/op
+Iteration   2: 2.589 ns/op
+Iteration   3: 2.365 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivateInline":
+  2.583 ±(99.9%) 3.910 ns/op [Average]
+  (min, avg, max) = (2.365, 2.583, 2.794), stdev = 0.214
+  CI (99.9%): [≈ 0, 6.493] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.normal
+
+# Run progress: 32.73% complete, ETA 00:18:43
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 2.684 ns/op
+Iteration   2: 2.655 ns/op
+Iteration   3: 2.427 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.normal":
+  2.589 ±(99.9%) 2.572 ns/op [Average]
+  (min, avg, max) = (2.427, 2.589, 2.684), stdev = 0.141
+  CI (99.9%): [0.017, 5.160] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.primitive
+
+# Run progress: 34.55% complete, ETA 00:18:12
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.549 ns/op
+Iteration   2: 2.394 ns/op
+Iteration   3: 2.337 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.primitive":
+  2.427 ±(99.9%) 1.995 ns/op [Average]
+  (min, avg, max) = (2.337, 2.427, 2.549), stdev = 0.109
+  CI (99.9%): [0.431, 4.422] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.privateNormal
+
+# Run progress: 36.36% complete, ETA 00:17:42
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.630 ns/op
+Iteration   2: 2.837 ns/op
+Iteration   3: 2.637 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.privateNormal":
+  2.701 ±(99.9%) 2.147 ns/op [Average]
+  (min, avg, max) = (2.630, 2.701, 2.837), stdev = 0.118
+  CI (99.9%): [0.555, 4.848] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflection
+
+# Run progress: 38.18% complete, ETA 00:17:12
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 5.219 ns/op
+Iteration   2: 5.145 ns/op
+Iteration   3: 4.942 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflection":
+  5.102 ±(99.9%) 2.615 ns/op [Average]
+  (min, avg, max) = (4.942, 5.102, 5.219), stdev = 0.143
+  CI (99.9%): [2.487, 7.717] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessible
+
+# Run progress: 40.00% complete, ETA 00:16:41
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 4.747 ns/op
+Iteration   2: 6.227 ns/op
+Iteration   3: 5.401 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessible":
+  5.458 ±(99.9%) 13.531 ns/op [Average]
+  (min, avg, max) = (4.747, 5.458, 6.227), stdev = 0.742
+  CI (99.9%): [≈ 0, 18.989] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrimitive
+
+# Run progress: 41.82% complete, ETA 00:16:11
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: 4.485 ns/op
+Iteration   2: 6.010 ns/op
+Iteration   3: 4.937 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrimitive":
+  5.144 ±(99.9%) 14.292 ns/op [Average]
+  (min, avg, max) = (4.485, 5.144, 6.010), stdev = 0.783
+  CI (99.9%): [≈ 0, 19.436] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrivate
+
+# Run progress: 43.64% complete, ETA 00:15:40
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 4.667 ns/op
+Iteration   2: 5.025 ns/op
+Iteration   3: 4.751 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrivate":
+  4.814 ±(99.9%) 3.413 ns/op [Average]
+  (min, avg, max) = (4.667, 4.814, 5.025), stdev = 0.187
+  CI (99.9%): [1.402, 8.227] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessibleSpecializedPrimitive
+
+# Run progress: 45.45% complete, ETA 00:15:10
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 4.501 ns/op
+Iteration   2: 5.396 ns/op
+Iteration   3: 5.000 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessibleSpecializedPrimitive":
+  4.966 ±(99.9%) 8.181 ns/op [Average]
+  (min, avg, max) = (4.501, 4.966, 5.396), stdev = 0.448
+  CI (99.9%): [≈ 0, 13.146] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionPrimitive
+
+# Run progress: 47.27% complete, ETA 00:14:39
+# Fork: 1 of 1
+[0.026s][info][gc] Using G1
+Iteration   1: 5.131 ns/op
+Iteration   2: 6.118 ns/op
+Iteration   3: 5.282 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionPrimitive":
+  5.510 ±(99.9%) 9.700 ns/op [Average]
+  (min, avg, max) = (5.131, 5.510, 6.118), stdev = 0.532
+  CI (99.9%): [≈ 0, 15.211] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionSpecializedPrimitive
+
+# Run progress: 49.09% complete, ETA 00:14:09
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 4.934 ns/op
+Iteration   2: 4.932 ns/op
+Iteration   3: 4.920 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionSpecializedPrimitive":
+  4.928 ±(99.9%) 0.140 ns/op [Average]
+  (min, avg, max) = (4.920, 4.928, 4.934), stdev = 0.008
+  CI (99.9%): [4.789, 5.068] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handle
+
+# Run progress: 50.91% complete, ETA 00:13:39
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: [0.527s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.543ms
+[2.528s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1973M->1M(4096M) 2.338ms
+[3.918s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1983M->1M(4096M) 2.272ms
+[5.228s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2003M->1M(4096M) 2.604ms
+[6.560s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2031M->1M(4096M) 2.255ms
+[7.975s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2071M->1M(4096M) 2.597ms
+[9.645s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2123M->1M(4096M) 2.345ms
+40.235 ns/op
+Iteration   2: [11.201s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2189M->2M(4096M) 2.457ms
+[12.800s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2274M->2M(4096M) 2.351ms
+[14.594s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 3.361ms
+[17.100s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 3.010ms
+[19.275s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.588ms
+43.918 ns/op
+Iteration   3: [21.095s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.255ms
+[22.714s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.175ms
+[24.416s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.423ms
+[26.043s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.511ms
+[27.630s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.030ms
+[29.216s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.006ms
+35.412 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handle":
+  39.855 ±(99.9%) 77.821 ns/op [Average]
+  (min, avg, max) = (35.412, 39.855, 43.918), stdev = 4.266
+  CI (99.9%): [≈ 0, 117.676] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleExact
+
+# Run progress: 52.73% complete, ETA 00:13:09
+# Fork: 1 of 1
+[0.025s][info][gc] Using G1
+Iteration   1: [0.488s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.312ms
+[2.418s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1979M->1M(4096M) 2.469ms
+[3.788s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1989M->1M(4096M) 2.348ms
+[5.140s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2009M->1M(4096M) 2.175ms
+[6.500s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2037M->1M(4096M) 2.108ms
+[7.876s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2077M->1M(4096M) 2.174ms
+[9.283s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2129M->1M(4096M) 2.163ms
+39.199 ns/op
+Iteration   2: [10.898s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2197M->2M(4096M) 2.220ms
+[12.373s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2284M->2M(4096M) 2.217ms
+[14.066s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.392ms
+[15.618s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.022ms
+[17.152s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.187ms
+[18.703s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.433ms
+34.554 ns/op
+Iteration   3: [20.294s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.129ms
+[21.916s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.177ms
+[23.597s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 3.522ms
+[25.332s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.103ms
+[27.006s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.038ms
+[28.639s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.059ms
+36.255 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleExact":
+  36.669 ±(99.9%) 42.873 ns/op [Average]
+  (min, avg, max) = (34.554, 36.669, 39.199), stdev = 2.350
+  CI (99.9%): [≈ 0, 79.542] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleExactInline
+
+# Run progress: 54.55% complete, ETA 00:12:38
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.503s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.374ms
+[2.356s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1977M->1M(4096M) 2.396ms
+[3.649s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1987M->1M(4096M) 2.219ms
+[4.901s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2007M->1M(4096M) 2.346ms
+[6.172s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2035M->1M(4096M) 2.310ms
+[7.488s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2073M->2M(4096M) 2.280ms
+[8.847s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2126M->1M(4096M) 2.273ms
+[10.236s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2191M->1M(4096M) 2.407ms
+36.627 ns/op
+Iteration   2: [11.715s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2273M->2M(4096M) 2.430ms
+[13.214s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2374M->2M(4096M) 2.543ms
+[14.837s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.340ms
+[16.322s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.094ms
+[17.830s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.374ms
+[19.335s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.222ms
+33.682 ns/op
+Iteration   3: [20.892s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.228ms
+[22.427s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.588ms
+[23.955s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.046ms
+[25.480s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.019ms
+[27.141s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.104ms
+[28.877s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.050ms
+34.782 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleExactInline":
+  35.030 ±(99.9%) 27.148 ns/op [Average]
+  (min, avg, max) = (33.682, 35.030, 36.627), stdev = 1.488
+  CI (99.9%): [7.883, 62.178] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleInline
+
+# Run progress: 56.36% complete, ETA 00:12:08
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.639s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.132ms
+[2.581s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1977M->1M(4096M) 2.432ms
+[3.917s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1987M->1M(4096M) 2.226ms
+[5.234s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2007M->1M(4096M) 2.628ms
+[6.590s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2035M->1M(4096M) 1.990ms
+[7.948s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2075M->1M(4096M) 2.252ms
+[9.403s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2127M->2M(4096M) 2.820ms
+38.595 ns/op
+Iteration   2: [10.907s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2194M->2M(4096M) 2.567ms
+[12.572s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.427ms
+[14.141s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.109ms
+[15.704s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.244ms
+[17.297s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.176ms
+[18.943s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.246ms
+35.204 ns/op
+Iteration   3: [20.570s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.104ms
+[22.167s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.167ms
+[23.745s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.592ms
+[25.327s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.073ms
+[26.898s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 0.981ms
+[28.468s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 0.994ms
+[30.050s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.065ms
+34.423 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleInline":
+  36.074 ±(99.9%) 40.464 ns/op [Average]
+  (min, avg, max) = (34.423, 36.074, 38.595), stdev = 2.218
+  CI (99.9%): [≈ 0, 76.539] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitive
+
+# Run progress: 58.18% complete, ETA 00:11:38
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: 5.629 ns/op
+Iteration   2: 5.648 ns/op
+Iteration   3: 6.310 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitive":
+  5.862 ±(99.9%) 7.076 ns/op [Average]
+  (min, avg, max) = (5.629, 5.862, 6.310), stdev = 0.388
+  CI (99.9%): [≈ 0, 12.939] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxed
+
+# Run progress: 60.00% complete, ETA 00:11:08
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 8.895 ns/op
+Iteration   2: 10.312 ns/op
+Iteration   3: 9.870 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxed":
+  9.692 ±(99.9%) 13.221 ns/op [Average]
+  (min, avg, max) = (8.895, 9.692, 10.312), stdev = 0.725
+  CI (99.9%): [≈ 0, 22.914] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxedInline
+
+# Run progress: 61.82% complete, ETA 00:10:37
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 7.816 ns/op
+Iteration   2: 9.810 ns/op
+Iteration   3: 10.038 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxedInline":
+  9.221 ±(99.9%) 22.301 ns/op [Average]
+  (min, avg, max) = (7.816, 9.221, 10.038), stdev = 1.222
+  CI (99.9%): [≈ 0, 31.522] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExact
+
+# Run progress: 63.64% complete, ETA 00:10:07
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 5.621 ns/op
+Iteration   2: 5.553 ns/op
+Iteration   3: 5.405 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExact":
+  5.526 ±(99.9%) 2.019 ns/op [Average]
+  (min, avg, max) = (5.405, 5.526, 5.621), stdev = 0.111
+  CI (99.9%): [3.507, 7.545] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExactInline
+
+# Run progress: 65.45% complete, ETA 00:09:36
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: 2.453 ns/op
+Iteration   2: 2.349 ns/op
+Iteration   3: 2.422 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExactInline":
+  2.408 ±(99.9%) 0.980 ns/op [Average]
+  (min, avg, max) = (2.349, 2.408, 2.453), stdev = 0.054
+  CI (99.9%): [1.428, 3.388] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveInline
+
+# Run progress: 67.27% complete, ETA 00:09:06
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: 2.825 ns/op
+Iteration   2: 2.468 ns/op
+Iteration   3: 2.526 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveInline":
+  2.606 ±(99.9%) 3.492 ns/op [Average]
+  (min, avg, max) = (2.468, 2.606, 2.825), stdev = 0.191
+  CI (99.9%): [≈ 0, 6.098] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExact
+
+# Run progress: 69.09% complete, ETA 00:08:36
+# Fork: 1 of 1
+[0.023s][info][gc] Using G1
+Iteration   1: [0.491s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.122ms
+[2.506s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1979M->1M(4096M) 2.764ms
+[3.881s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1989M->1M(4096M) 2.496ms
+[5.331s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2009M->1M(4096M) 2.162ms
+[6.797s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2037M->2M(4096M) 2.578ms
+[8.181s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2076M->1M(4096M) 2.199ms
+[9.594s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2127M->2M(4096M) 2.488ms
+39.845 ns/op
+Iteration   2: [11.151s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2194M->2M(4096M) 2.486ms
+[12.864s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.493ms
+[14.453s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.133ms
+[16.034s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.155ms
+[17.625s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.181ms
+[19.210s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.191ms
+35.470 ns/op
+Iteration   3: [20.802s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.127ms
+[22.373s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.358ms
+[23.968s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.367ms
+[25.567s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.007ms
+[27.207s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.078ms
+[29.001s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.135ms
+35.911 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExact":
+  37.075 ±(99.9%) 43.944 ns/op [Average]
+  (min, avg, max) = (35.470, 37.075, 39.845), stdev = 2.409
+  CI (99.9%): [≈ 0, 81.019] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactInline
+
+# Run progress: 70.91% complete, ETA 00:08:05
+# Fork: 1 of 1
+[0.024s][info][gc] Using G1
+Iteration   1: [0.540s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.424ms
+[2.888s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1977M->1M(4096M) 2.569ms
+[4.243s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1987M->1M(4096M) 2.561ms
+[5.505s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2007M->1M(4096M) 2.238ms
+[6.841s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2035M->1M(4096M) 2.367ms
+[8.173s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2073M->2M(4096M) 2.313ms
+[9.784s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2126M->1M(4096M) 2.604ms
+40.719 ns/op
+Iteration   2: [11.260s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2191M->2M(4096M) 2.470ms
+[12.697s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2274M->2M(4096M) 2.450ms
+[14.262s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.471ms
+[15.757s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.286ms
+[17.282s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.111ms
+[18.793s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.147ms
+33.502 ns/op
+Iteration   3: [20.296s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.237ms
+[21.808s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.154ms
+[23.317s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.502ms
+[24.848s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 0.998ms
+[26.477s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.100ms
+[28.102s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.096ms
+[29.737s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.047ms
+34.286 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactInline":
+  36.169 ±(99.9%) 72.247 ns/op [Average]
+  (min, avg, max) = (33.502, 36.169, 40.719), stdev = 3.960
+  CI (99.9%): [≈ 0, 108.416] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactPrivate
+
+# Run progress: 72.73% complete, ETA 00:07:35
+# Fork: 1 of 1
+[0.023s][info][gc] Using G1
+Iteration   1: [0.497s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.716ms
+[2.471s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1977M->1M(4096M) 2.279ms
+[3.762s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1987M->1M(4096M) 2.308ms
+[5.250s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2007M->1M(4096M) 2.208ms
+[6.610s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2035M->1M(4096M) 2.389ms
+[8.193s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2075M->2M(4096M) 2.368ms
+[9.714s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2128M->1M(4096M) 2.339ms
+40.495 ns/op
+Iteration   2: [11.199s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2193M->2M(4096M) 2.321ms
+[12.702s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2278M->2M(4096M) 2.195ms
+[14.312s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.297ms
+[15.873s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.162ms
+[17.469s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 3.376ms
+[19.165s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.320ms
+35.403 ns/op
+Iteration   3: [20.802s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.156ms
+[22.350s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.105ms
+[23.888s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.413ms
+[25.494s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.019ms
+[27.184s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.062ms
+[28.882s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.024ms
+35.330 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactPrivate":
+  37.076 ±(99.9%) 54.023 ns/op [Average]
+  (min, avg, max) = (35.330, 37.076, 40.495), stdev = 2.961
+  CI (99.9%): [≈ 0, 91.100] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactPrivateInline
+
+# Run progress: 74.55% complete, ETA 00:07:05
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.512s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.287ms
+[2.430s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1977M->1M(4096M) 2.361ms
+[3.692s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1987M->2M(4096M) 2.283ms
+[5.151s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2008M->1M(4096M) 2.299ms
+[6.611s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2035M->1M(4096M) 2.836ms
+[8.582s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2073M->2M(4096M) 2.554ms
+[10.007s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2126M->1M(4096M) 2.297ms
+41.747 ns/op
+Iteration   2: [11.422s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2191M->2M(4096M) 2.365ms
+[13.365s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2276M->2M(4096M) 14.438ms
+[16.288s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 4.014ms
+[19.597s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.727ms
+54.234 ns/op
+Iteration   3: [21.800s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 3.998ms
+[24.568s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.409ms
+[26.204s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.453ms
+[27.805s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.395ms
+[29.455s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.889ms
+42.708 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactPrivateInline":
+  46.230 ±(99.9%) 126.765 ns/op [Average]
+  (min, avg, max) = (41.747, 46.230, 54.234), stdev = 6.948
+  CI (99.9%): [≈ 0, 172.995] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExact
+
+# Run progress: 76.36% complete, ETA 00:06:34
+# Fork: 1 of 1
+[0.024s][info][gc] Using G1
+Iteration   1: 6.575 ns/op
+Iteration   2: 12.034 ns/op
+Iteration   3: 6.591 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExact":
+  8.400 ±(99.9%) 57.421 ns/op [Average]
+  (min, avg, max) = (6.575, 8.400, 12.034), stdev = 3.147
+  CI (99.9%): [≈ 0, 65.821] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExactInline
+
+# Run progress: 78.18% complete, ETA 00:06:04
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: 2.736 ns/op
+Iteration   2: 2.689 ns/op
+Iteration   3: 2.498 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExactInline":
+  2.641 ±(99.9%) 2.300 ns/op [Average]
+  (min, avg, max) = (2.498, 2.641, 2.736), stdev = 0.126
+  CI (99.9%): [0.341, 4.941] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.normal
+
+# Run progress: 80.00% complete, ETA 00:05:33
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: [0.494s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.914ms
+[2.365s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1963M->1M(4096M) 2.393ms
+[3.616s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1973M->1M(4096M) 2.250ms
+[4.893s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 1993M->1M(4096M) 2.874ms
+[6.308s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2021M->1M(4096M) 2.278ms
+[8.208s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2059M->2M(4096M) 3.579ms
+45.521 ns/op
+Iteration   2: [10.986s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2110M->2M(4096M) 3.587ms
+[13.506s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2172M->2M(4096M) 3.605ms
+[16.940s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 4.108ms
+[18.800s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 3.506ms
+53.570 ns/op
+Iteration   3: [20.344s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.288ms
+[21.869s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.430ms
+[23.437s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.194ms
+[24.967s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.112ms
+[26.474s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.188ms
+[28.061s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.504ms
+[29.572s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.047ms
+33.690 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.normal":
+  44.260 ±(99.9%) 182.440 ns/op [Average]
+  (min, avg, max) = (33.690, 44.260, 53.570), stdev = 10.000
+  CI (99.9%): [≈ 0, 226.700] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.primitive
+
+# Run progress: 81.82% complete, ETA 00:05:03
+# Fork: 1 of 1
+[0.025s][info][gc] Using G1
+Iteration   1: 2.703 ns/op
+Iteration   2: 2.387 ns/op
+Iteration   3: 2.448 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.primitive":
+  2.513 ±(99.9%) 3.062 ns/op [Average]
+  (min, avg, max) = (2.387, 2.513, 2.703), stdev = 0.168
+  CI (99.9%): [≈ 0, 5.575] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.privateNormal
+
+# Run progress: 83.64% complete, ETA 00:04:33
+# Fork: 1 of 1
+[0.021s][info][gc] Using G1
+Iteration   1: [0.502s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.214ms
+[3.485s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1979M->2M(4096M) 3.431ms
+[6.044s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1990M->1M(4096M) 2.796ms
+[8.546s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2007M->1M(4096M) 5.078ms
+72.658 ns/op
+Iteration   2: [11.170s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2035M->2M(4096M) 2.971ms
+[14.153s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2074M->2M(4096M) 3.537ms
+[17.074s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.594ms
+[18.650s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.321ms
+[20.211s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.180ms
+51.409 ns/op
+Iteration   3: [21.742s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.073ms
+[23.262s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.167ms
+[24.816s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.127ms
+[26.416s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.186ms
+[28.025s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.188ms
+[29.579s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.161ms
+34.192 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.privateNormal":
+  52.753 ±(99.9%) 351.524 ns/op [Average]
+  (min, avg, max) = (34.192, 52.753, 72.658), stdev = 19.268
+  CI (99.9%): [≈ 0, 404.277] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflection
+
+# Run progress: 85.45% complete, ETA 00:04:02
+# Fork: 1 of 1
+[0.020s][info][gc] Using G1
+Iteration   1: [0.501s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.450ms
+[2.091s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1973M->1M(4096M) 2.372ms
+[3.194s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1983M->1M(4096M) 2.538ms
+[4.251s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2003M->1M(4096M) 2.353ms
+[5.238s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2031M->1M(4096M) 2.325ms
+[6.232s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2069M->1M(4096M) 2.608ms
+[7.966s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2121M->1M(4096M) 3.280ms
+[9.191s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2185M->2M(4096M) 2.521ms
+50.339 ns/op
+Iteration   2: [10.382s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2266M->2M(4096M) 2.621ms
+[11.561s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2364M->2M(4096M) 2.561ms
+[12.749s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.968ms
+[13.881s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.159ms
+[15.000s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.200ms
+[16.115s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.078ms
+[17.237s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.204ms
+[18.357s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.458ms
+[19.478s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 0.996ms
+39.263 ns/op
+Iteration   3: [20.590s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.013ms
+[21.717s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.083ms
+[22.870s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.005ms
+[23.992s][info][gc] GC(20) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.014ms
+[25.129s][info][gc] GC(21) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.087ms
+[26.244s][info][gc] GC(22) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.057ms
+[27.355s][info][gc] GC(23) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.352ms
+[28.466s][info][gc] GC(24) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.097ms
+[29.705s][info][gc] GC(25) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.033ms
+38.915 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.reflection":
+  42.839 ±(99.9%) 118.535 ns/op [Average]
+  (min, avg, max) = (38.915, 42.839, 50.339), stdev = 6.497
+  CI (99.9%): [≈ 0, 161.374] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessible
+
+# Run progress: 87.27% complete, ETA 00:03:32
+# Fork: 1 of 1
+[0.050s][info][gc] Using G1
+Iteration   1: [0.497s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.126ms
+[2.049s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1981M->2M(4096M) 2.597ms
+[3.099s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1992M->1M(4096M) 2.367ms
+[4.006s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2011M->1M(4096M) 2.306ms
+[4.981s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2039M->1M(4096M) 2.749ms
+[5.955s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2077M->1M(4096M) 2.245ms
+[6.921s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2129M->1M(4096M) 2.285ms
+[7.932s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2195M->1M(4096M) 2.451ms
+[8.980s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2277M->2M(4096M) 2.401ms
+[10.090s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2378M->1M(4096M) 2.566ms
+42.598 ns/op
+Iteration   2: [11.258s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2455M->2M(4096M) 2.492ms
+[12.455s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.247ms
+[13.582s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.203ms
+[14.711s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.229ms
+[15.888s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.017ms
+[17.080s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.626ms
+[18.215s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.041ms
+[19.381s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.047ms
+39.699 ns/op
+Iteration   3: [20.531s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.720ms
+[21.749s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.113ms
+[22.968s][info][gc] GC(20) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.079ms
+[24.167s][info][gc] GC(21) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.068ms
+[25.320s][info][gc] GC(22) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.026ms
+[26.560s][info][gc] GC(23) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.071ms
+[27.799s][info][gc] GC(24) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.166ms
+[29.005s][info][gc] GC(25) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.168ms
+[30.191s][info][gc] GC(26) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 0.998ms
+41.312 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessible":
+  41.203 ±(99.9%) 26.508 ns/op [Average]
+  (min, avg, max) = (39.699, 41.203, 42.598), stdev = 1.453
+  CI (99.9%): [14.695, 67.711] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessiblePrimitive
+
+# Run progress: 89.09% complete, ETA 00:03:02
+# Fork: 1 of 1
+[0.024s][info][gc] Using G1
+[1488.610s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->2M(4096M) 3.174ms
+Iteration   1: [0.480s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.311ms
+[2.382s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 2027M->1M(4096M) 2.306ms
+[3.628s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 2037M->1M(4096M) 2.262ms
+[4.902s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2057M->1M(4096M) 2.315ms
+[6.140s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2085M->1M(4096M) 2.508ms
+[7.408s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2123M->1M(4096M) 2.191ms
+[8.710s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2175M->1M(4096M) 2.429ms
+[10.051s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2241M->1M(4096M) 2.150ms
+19.962 ns/op
+Iteration   2: [11.714s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2325M->2M(4096M) 2.491ms
+[13.486s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2428M->2M(4096M) 2.256ms
+[15.173s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.502ms
+[16.939s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.034ms
+[18.750s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.111ms
+22.011 ns/op
+Iteration   3: [20.474s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.040ms
+[22.089s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.139ms
+[23.731s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 4.251ms
+[25.422s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->1M(4096M) 1.036ms
+[27.026s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.014ms
+[28.598s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 0.994ms
+[30.156s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.056ms
+20.066 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessiblePrimitive":
+  20.680 ±(99.9%) 21.059 ns/op [Average]
+  (min, avg, max) = (19.962, 20.680, 22.011), stdev = 1.154
+  CI (99.9%): [≈ 0, 41.739] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessiblePrivate
+
+# Run progress: 90.91% complete, ETA 00:02:31
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.461s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.176ms
+[2.106s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 1979M->1M(4096M) 3.145ms
+[3.108s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 1989M->1M(4096M) 2.857ms
+[4.076s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2009M->1M(4096M) 2.051ms
+[5.038s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2037M->1M(4096M) 2.313ms
+[6.009s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2077M->1M(4096M) 2.206ms
+[7.086s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2129M->1M(4096M) 2.425ms
+[8.134s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2197M->1M(4096M) 2.949ms
+[9.248s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2279M->1M(4096M) 2.499ms
+44.020 ns/op
+Iteration   2: [10.400s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2379M->2M(4096M) 2.531ms
+[11.548s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.663ms
+[12.675s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.267ms
+[13.790s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.104ms
+[14.961s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.052ms
+[16.084s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.126ms
+[17.206s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.416ms
+[18.451s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.095ms
+[19.607s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.060ms
+39.714 ns/op
+Iteration   3: [20.772s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.161ms
+[21.897s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.054ms
+[23.005s][info][gc] GC(20) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.052ms
+[24.213s][info][gc] GC(21) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.035ms
+[25.362s][info][gc] GC(22) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.072ms
+[26.473s][info][gc] GC(23) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.010ms
+[27.603s][info][gc] GC(24) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.155ms
+[28.799s][info][gc] GC(25) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 1.016ms
+[29.970s][info][gc] GC(26) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 0.994ms
+39.305 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessiblePrivate":
+  41.013 ±(99.9%) 47.653 ns/op [Average]
+  (min, avg, max) = (39.305, 41.013, 44.020), stdev = 2.612
+  CI (99.9%): [≈ 0, 88.666] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionPrimitive
+
+# Run progress: 92.73% complete, ETA 00:02:01
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.779s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.328ms
+[3.002s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 2029M->1M(4096M) 2.552ms
+[4.325s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 2039M->1M(4096M) 2.341ms
+[5.630s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2057M->1M(4096M) 2.224ms
+[6.945s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2085M->1M(4096M) 2.190ms
+[8.287s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2125M->1M(4096M) 2.340ms
+[9.723s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2177M->1M(4096M) 2.177ms
+21.974 ns/op
+Iteration   2: [11.470s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2243M->2M(4096M) 2.418ms
+[13.376s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2328M->2M(4096M) 2.368ms
+[15.327s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.419ms
+[17.249s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.112ms
+[19.167s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.126ms
+24.276 ns/op
+Iteration   3: [20.983s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.080ms
+[22.684s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.072ms
+[24.389s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.023ms
+[26.118s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.581ms
+[27.850s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->1M(4096M) 1.083ms
+[29.555s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 0.999ms
+21.358 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionPrimitive":
+  22.536 ±(99.9%) 28.056 ns/op [Average]
+  (min, avg, max) = (21.358, 22.536, 24.276), stdev = 1.538
+  CI (99.9%): [≈ 0, 50.592] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.LookupBenchmark.handle
+
+# Run progress: 94.55% complete, ETA 00:01:31
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.813s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.190ms
+[5.809s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 2031M->1M(4096M) 2.392ms
+[10.171s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 2041M->1M(4096M) 2.499ms
+1030.626 ns/op
+Iteration   2: [14.795s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2059M->2M(4096M) 2.305ms
+[19.136s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2088M->2M(4096M) 2.291ms
+946.749 ns/op
+Iteration   3: [24.303s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.507ms
+[29.580s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.282ms
+947.966 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.LookupBenchmark.handle":
+  975.114 ±(99.9%) 877.136 ns/op [Average]
+  (min, avg, max) = (946.749, 975.114, 1030.626), stdev = 48.079
+  CI (99.9%): [97.978, 1852.250] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.LookupBenchmark.handlePreLookedUp
+
+# Run progress: 96.36% complete, ETA 00:01:00
+# Fork: 1 of 1
+[0.022s][info][gc] Using G1
+Iteration   1: [0.902s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.245ms
+[6.847s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 2031M->1M(4096M) 2.334ms
+981.971 ns/op
+Iteration   2: [12.013s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 2041M->2M(4096M) 2.413ms
+[16.954s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2060M->2M(4096M) 2.294ms
+855.634 ns/op
+Iteration   3: [23.021s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.599ms
+[29.158s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.249ms
+886.307 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.LookupBenchmark.handlePreLookedUp":
+  907.971 ±(99.9%) 1202.183 ns/op [Average]
+  (min, avg, max) = (855.634, 907.971, 981.971), stdev = 65.896
+  CI (99.9%): [≈ 0, 2110.153] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.LookupBenchmark.reflection
+
+# Run progress: 98.18% complete, ETA 00:00:30
+# Fork: 1 of 1
+[0.023s][info][gc] Using G1
+Iteration   1: [0.437s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 204M->1M(4096M) 2.312ms
+[1.968s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 2035M->1M(4096M) 2.517ms
+[2.893s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 2045M->1M(4096M) 2.260ms
+[3.800s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 2063M->1M(4096M) 2.486ms
+[4.703s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 2091M->1M(4096M) 2.491ms
+[5.613s][info][gc] GC(5) Pause Young (Normal) (G1 Evacuation Pause) 2129M->1M(4096M) 2.241ms
+[6.530s][info][gc] GC(6) Pause Young (Normal) (G1 Evacuation Pause) 2181M->1M(4096M) 2.135ms
+[7.573s][info][gc] GC(7) Pause Young (Normal) (G1 Evacuation Pause) 2247M->1M(4096M) 2.590ms
+[8.626s][info][gc] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 2329M->1M(4096M) 2.706ms
+[9.756s][info][gc] GC(9) Pause Young (Normal) (G1 Evacuation Pause) 2425M->1M(4096M) 6.851ms
+47.903 ns/op
+Iteration   2: [10.902s][info][gc] GC(10) Pause Young (Normal) (G1 Evacuation Pause) 2455M->2M(4096M) 2.588ms
+[11.865s][info][gc] GC(11) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.106ms
+[12.845s][info][gc] GC(12) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.014ms
+[13.787s][info][gc] GC(13) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.069ms
+[14.714s][info][gc] GC(14) Pause Young (Normal) (G1 Evacuation Pause) 2456M->2M(4096M) 2.296ms
+[15.682s][info][gc] GC(15) Pause Young (Normal) (G1 Evacuation Pause) 2454M->2M(4096M) 2.435ms
+[16.725s][info][gc] GC(16) Pause Young (Normal) (G1 Evacuation Pause) 2456M->1M(4096M) 2.250ms
+[17.800s][info][gc] GC(17) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.057ms
+[18.862s][info][gc] GC(18) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.106ms
+[20.029s][info][gc] GC(19) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.151ms
+41.197 ns/op
+Iteration   3: [21.206s][info][gc] GC(20) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.087ms
+[22.282s][info][gc] GC(21) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.078ms
+[23.298s][info][gc] GC(22) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 0.985ms
+[24.303s][info][gc] GC(23) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.005ms
+[25.291s][info][gc] GC(24) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 0.975ms
+[26.363s][info][gc] GC(25) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.166ms
+[27.454s][info][gc] GC(26) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.948ms
+[28.668s][info][gc] GC(27) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.090ms
+[29.873s][info][gc] GC(28) Pause Young (Normal) (G1 Evacuation Pause) 2455M->1M(4096M) 1.127ms
+44.435 ns/op
+
+
+Result "framwk.benchmark.jmh.reflection.LookupBenchmark.reflection":
+  44.512 ±(99.9%) 61.180 ns/op [Average]
+  (min, avg, max) = (41.197, 44.512, 47.903), stdev = 3.353
+  CI (99.9%): [≈ 0, 105.692] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:27:51
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                  Mode  Cnt    Score      Error  Units
+FieldBenchmark.handle                                      avgt    3    6.080 ±    3.383  ns/op
+FieldBenchmark.handleExact                                 avgt    3    5.695 ±    4.237  ns/op
+FieldBenchmark.handleExactInline                           avgt    3    2.833 ±    8.622  ns/op
+FieldBenchmark.handleExactPrimitive                        avgt    3    5.515 ±    6.931  ns/op
+FieldBenchmark.handleExactPrimitiveInline                  avgt    3    2.472 ±    3.095  ns/op
+FieldBenchmark.handleInline                                avgt    3    6.370 ±   10.653  ns/op
+FieldBenchmark.handlePrimitive                             avgt    3    5.383 ±    6.364  ns/op
+FieldBenchmark.handlePrimitiveInline                       avgt    3    2.479 ±    3.039  ns/op
+FieldBenchmark.handleUnreflected                           avgt    3    7.054 ±   11.108  ns/op
+FieldBenchmark.handleUnreflectedExact                      avgt    3    5.766 ±    5.642  ns/op
+FieldBenchmark.handleUnreflectedExactInline                avgt    3    2.599 ±    2.094  ns/op
+FieldBenchmark.handleUnreflectedExactPrimitive             avgt    3    5.291 ±    5.861  ns/op
+FieldBenchmark.handleUnreflectedExactPrimitiveInline       avgt    3    2.445 ±    3.332  ns/op
+FieldBenchmark.handleUnreflectedInline                     avgt    3    5.401 ±    9.284  ns/op
+FieldBenchmark.handleUnreflectedPrimitive                  avgt    3    5.331 ±    5.626  ns/op
+FieldBenchmark.handleUnreflectedPrimitiveInline            avgt    3    2.422 ±    2.569  ns/op
+FieldBenchmark.handleUnreflectedPrivate                    avgt    3    5.528 ±    5.621  ns/op
+FieldBenchmark.handleUnreflectedPrivateInline              avgt    3    2.583 ±    3.910  ns/op
+FieldBenchmark.normal                                      avgt    3    2.589 ±    2.572  ns/op
+FieldBenchmark.primitive                                   avgt    3    2.427 ±    1.995  ns/op
+FieldBenchmark.privateNormal                               avgt    3    2.701 ±    2.147  ns/op
+FieldBenchmark.reflection                                  avgt    3    5.102 ±    2.615  ns/op
+FieldBenchmark.reflectionAccessible                        avgt    3    5.458 ±   13.531  ns/op
+FieldBenchmark.reflectionAccessiblePrimitive               avgt    3    5.144 ±   14.292  ns/op
+FieldBenchmark.reflectionAccessiblePrivate                 avgt    3    4.814 ±    3.413  ns/op
+FieldBenchmark.reflectionAccessibleSpecializedPrimitive    avgt    3    4.966 ±    8.181  ns/op
+FieldBenchmark.reflectionPrimitive                         avgt    3    5.510 ±    9.700  ns/op
+FieldBenchmark.reflectionSpecializedPrimitive              avgt    3    4.928 ±    0.140  ns/op
+InvocationBenchmark.handle                                 avgt    3   39.855 ±   77.821  ns/op
+InvocationBenchmark.handleExact                            avgt    3   36.669 ±   42.873  ns/op
+InvocationBenchmark.handleExactInline                      avgt    3   35.030 ±   27.148  ns/op
+InvocationBenchmark.handleInline                           avgt    3   36.074 ±   40.464  ns/op
+InvocationBenchmark.handlePrimitive                        avgt    3    5.862 ±    7.076  ns/op
+InvocationBenchmark.handlePrimitiveBoxed                   avgt    3    9.692 ±   13.221  ns/op
+InvocationBenchmark.handlePrimitiveBoxedInline             avgt    3    9.221 ±   22.301  ns/op
+InvocationBenchmark.handlePrimitiveExact                   avgt    3    5.526 ±    2.019  ns/op
+InvocationBenchmark.handlePrimitiveExactInline             avgt    3    2.408 ±    0.980  ns/op
+InvocationBenchmark.handlePrimitiveInline                  avgt    3    2.606 ±    3.492  ns/op
+InvocationBenchmark.handleUnreflectedExact                 avgt    3   37.075 ±   43.944  ns/op
+InvocationBenchmark.handleUnreflectedExactInline           avgt    3   36.169 ±   72.247  ns/op
+InvocationBenchmark.handleUnreflectedExactPrivate          avgt    3   37.076 ±   54.023  ns/op
+InvocationBenchmark.handleUnreflectedExactPrivateInline    avgt    3   46.230 ±  126.765  ns/op
+InvocationBenchmark.handleUnreflectedPrimitiveExact        avgt    3    8.400 ±   57.421  ns/op
+InvocationBenchmark.handleUnreflectedPrimitiveExactInline  avgt    3    2.641 ±    2.300  ns/op
+InvocationBenchmark.normal                                 avgt    3   44.260 ±  182.440  ns/op
+InvocationBenchmark.primitive                              avgt    3    2.513 ±    3.062  ns/op
+InvocationBenchmark.privateNormal                          avgt    3   52.753 ±  351.524  ns/op
+InvocationBenchmark.reflection                             avgt    3   42.839 ±  118.535  ns/op
+InvocationBenchmark.reflectionAccessible                   avgt    3   41.203 ±   26.508  ns/op
+InvocationBenchmark.reflectionAccessiblePrimitive          avgt    3   20.680 ±   21.059  ns/op
+InvocationBenchmark.reflectionAccessiblePrivate            avgt    3   41.013 ±   47.653  ns/op
+InvocationBenchmark.reflectionPrimitive                    avgt    3   22.536 ±   28.056  ns/op
+LookupBenchmark.handle                                     avgt    3  975.114 ±  877.136  ns/op
+LookupBenchmark.handlePreLookedUp                          avgt    3  907.971 ± 1202.183  ns/op
+LookupBenchmark.reflection                                 avgt    3   44.512 ±   61.180  ns/op

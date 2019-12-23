@@ -1,0 +1,12 @@
+    uintx G1PeriodicGCInterval                     = 0                                      {manageable} {default}
+   double G1PeriodicGCSystemLoadThreshold          = 0.000000                               {manageable} {default}
+     bool HeapDumpAfterFullGC                      = false                                  {manageable} {default}
+     bool HeapDumpBeforeFullGC                     = false                                  {manageable} {default}
+     bool HeapDumpOnOutOfMemoryError               = false                                  {manageable} {default}
+    ccstr HeapDumpPath                             =                                        {manageable} {default}
+    uintx MaxHeapFreeRatio                         = 70                                     {manageable} {default}
+    uintx MinHeapFreeRatio                         = 40                                     {manageable} {default}
+     bool PrintClassHistogram                      = false                                  {manageable} {default}
+     bool PrintConcurrentLocks                     = false                                  {manageable} {default}
+     bool ShowCodeDetailsInExceptionMessages       = false                                  {manageable} {default}
+   size_t SoftMaxHeapSize                          = 0                                      {manageable} {default}

@@ -14,10 +14,10 @@ import java.nio.charset.StandardCharsets;
  */
 public class BytesConvert {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         int           i  = 0;
         StringBuilder sb = new StringBuilder();
-        try (InputStream is = new BufferedInputStream(new FileInputStream(new File("/Volumes/To/logs/hprof/bytes.csv")))) {
+        try (InputStream is = new BufferedInputStream(new FileInputStream(new File("/Volumes/sm/logs/hprof/bytes.csv")))) {
             int      len    = is.available();
             byte[]   bytes  = new byte[len];
             int      readRt = is.read(bytes);
@@ -32,6 +32,8 @@ public class BytesConvert {
                     break;
                 }
             }
+        } catch (IOException e) {
+
         }
         System.out.println(sb.toString());
         System.out.println("hello end");

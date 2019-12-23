@@ -16,6 +16,23 @@
 
     <modules>
         <module>flink-quickstart</module>
-        <module>msg-queue</module>
+        <module>binlog-collector</module>
+        <module>binlog-connector</module>
+        <module>binlog-canal</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${hikaricp.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

@@ -52,6 +52,7 @@
         <module>java-standard-swing</module>
         <module>java-standard-compiler</module>
         <module>java-standard-agent</module>
+        <module>java-standard-proformace</module>
     </modules>
 
     <build>

@@ -1,0 +1,2321 @@
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/Users/yakir/Developer/think/functional/finding/framewk-benchmark/framewk-benchmark-jmh/target/libs/jmh-core-1.22.jar) to field java.io.PrintStream.charOut
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handle
+
+# Run progress: 0.00% complete, ETA 00:36:40
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.984 ns/op
+# Warmup Iteration   2: 6.007 ns/op
+Iteration   1: 5.956 ns/op
+Iteration   2: 6.061 ns/op
+[40.260s][info][gc] Total allocated: 7197 KB
+[40.260s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handle":
+  6.008 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExact
+
+# Run progress: 1.82% complete, ETA 00:36:15
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.718 ns/op
+# Warmup Iteration   2: 7.281 ns/op
+Iteration   1: 5.531 ns/op
+Iteration   2: 5.430 ns/op
+[40.474s][info][gc] Total allocated: 7197 KB
+[40.474s][info][gc] Average allocation rate: 177 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExact":
+  5.481 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactInline
+
+# Run progress: 3.64% complete, ETA 00:35:40
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.711 ns/op
+# Warmup Iteration   2: 2.630 ns/op
+Iteration   1: 2.376 ns/op
+Iteration   2: 2.361 ns/op
+[40.266s][info][gc] Total allocated: 7197 KB
+[40.266s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactInline":
+  2.369 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitive
+
+# Run progress: 5.45% complete, ETA 00:34:58
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.417 ns/op
+# Warmup Iteration   2: 5.283 ns/op
+Iteration   1: 4.899 ns/op
+Iteration   2: 4.959 ns/op
+[40.251s][info][gc] Total allocated: 7189 KB
+[40.251s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitive":
+  4.929 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitiveInline
+
+# Run progress: 7.27% complete, ETA 00:34:17
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.529 ns/op
+# Warmup Iteration   2: 2.377 ns/op
+Iteration   1: 2.329 ns/op
+Iteration   2: 2.334 ns/op
+[40.485s][info][gc] Total allocated: 7189 KB
+[40.485s][info][gc] Average allocation rate: 177 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleExactPrimitiveInline":
+  2.331 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleInline
+
+# Run progress: 9.09% complete, ETA 00:33:38
+# Fork: 1 of 1
+[0.009s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.009s][info][gc] Using TLAB allocation; max: 4096K
+[0.009s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.009s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.009s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.445 ns/op
+# Warmup Iteration   2: 5.728 ns/op
+Iteration   1: 4.927 ns/op
+Iteration   2: 4.887 ns/op
+[40.246s][info][gc] Total allocated: 7197 KB
+[40.246s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleInline":
+  4.907 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitive
+
+# Run progress: 10.91% complete, ETA 00:32:57
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.387 ns/op
+# Warmup Iteration   2: 5.286 ns/op
+Iteration   1: 4.880 ns/op
+Iteration   2: 4.882 ns/op
+[40.253s][info][gc] Total allocated: 7197 KB
+[40.253s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitive":
+  4.881 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitiveInline
+
+# Run progress: 12.73% complete, ETA 00:32:16
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.522 ns/op
+# Warmup Iteration   2: 2.309 ns/op
+Iteration   1: 2.307 ns/op
+Iteration   2: 2.319 ns/op
+[40.435s][info][gc] Total allocated: 7197 KB
+[40.435s][info][gc] Average allocation rate: 177 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handlePrimitiveInline":
+  2.313 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflected
+
+# Run progress: 14.55% complete, ETA 00:31:36
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 6.078 ns/op
+# Warmup Iteration   2: 5.910 ns/op
+Iteration   1: 5.831 ns/op
+Iteration   2: 5.838 ns/op
+[40.249s][info][gc] Total allocated: 7197 KB
+[40.249s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflected":
+  5.835 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExact
+
+# Run progress: 16.36% complete, ETA 00:30:56
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: 6.001 ns/op
+# Warmup Iteration   2: 5.776 ns/op
+Iteration   1: 5.276 ns/op
+Iteration   2: 5.333 ns/op
+[40.255s][info][gc] Total allocated: 7197 KB
+[40.255s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExact":
+  5.304 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactInline
+
+# Run progress: 18.18% complete, ETA 00:30:15
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.621 ns/op
+# Warmup Iteration   2: 2.573 ns/op
+Iteration   1: 2.339 ns/op
+Iteration   2: 2.343 ns/op
+[40.252s][info][gc] Total allocated: 7197 KB
+[40.252s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactInline":
+  2.341 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitive
+
+# Run progress: 20.00% complete, ETA 00:29:34
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.449 ns/op
+# Warmup Iteration   2: 5.369 ns/op
+Iteration   1: 4.917 ns/op
+Iteration   2: 4.877 ns/op
+[40.247s][info][gc] Total allocated: 7189 KB
+[40.247s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitive":
+  4.897 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitiveInline
+
+# Run progress: 21.82% complete, ETA 00:28:54
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.540 ns/op
+# Warmup Iteration   2: 2.278 ns/op
+Iteration   1: 2.287 ns/op
+Iteration   2: 2.314 ns/op
+[40.253s][info][gc] Total allocated: 7189 KB
+[40.253s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedExactPrimitiveInline":
+  2.300 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedInline
+
+# Run progress: 23.64% complete, ETA 00:28:13
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.420 ns/op
+# Warmup Iteration   2: 5.696 ns/op
+Iteration   1: 4.860 ns/op
+Iteration   2: 4.811 ns/op
+[40.257s][info][gc] Total allocated: 7197 KB
+[40.257s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedInline":
+  4.835 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitive
+
+# Run progress: 25.45% complete, ETA 00:27:33
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.417 ns/op
+# Warmup Iteration   2: 5.377 ns/op
+Iteration   1: 4.874 ns/op
+Iteration   2: 4.889 ns/op
+[40.247s][info][gc] Total allocated: 7197 KB
+[40.247s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitive":
+  4.882 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitiveInline
+
+# Run progress: 27.27% complete, ETA 00:26:52
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.554 ns/op
+# Warmup Iteration   2: 2.316 ns/op
+Iteration   1: 2.322 ns/op
+Iteration   2: 2.320 ns/op
+[40.255s][info][gc] Total allocated: 7197 KB
+[40.255s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrimitiveInline":
+  2.321 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivate
+
+# Run progress: 29.09% complete, ETA 00:26:12
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.695 ns/op
+# Warmup Iteration   2: 5.530 ns/op
+Iteration   1: 5.154 ns/op
+Iteration   2: 5.166 ns/op
+[40.264s][info][gc] Total allocated: 7197 KB
+[40.264s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivate":
+  5.160 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivateInline
+
+# Run progress: 30.91% complete, ETA 00:25:31
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.586 ns/op
+# Warmup Iteration   2: 2.576 ns/op
+Iteration   1: 2.332 ns/op
+Iteration   2: 2.324 ns/op
+[40.252s][info][gc] Total allocated: 7197 KB
+[40.252s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.handleUnreflectedPrivateInline":
+  2.328 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.normal
+
+# Run progress: 32.73% complete, ETA 00:24:51
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.653 ns/op
+# Warmup Iteration   2: 2.662 ns/op
+Iteration   1: 2.318 ns/op
+Iteration   2: 2.363 ns/op
+[40.244s][info][gc] Total allocated: 7166 KB
+[40.244s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.normal":
+  2.340 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.primitive
+
+# Run progress: 34.55% complete, ETA 00:24:11
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.543 ns/op
+# Warmup Iteration   2: 2.322 ns/op
+Iteration   1: 2.326 ns/op
+Iteration   2: 2.330 ns/op
+[40.260s][info][gc] Total allocated: 7163 KB
+[40.260s][info][gc] Average allocation rate: 177 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.primitive":
+  2.328 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.privateNormal
+
+# Run progress: 36.36% complete, ETA 00:23:30
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.599 ns/op
+# Warmup Iteration   2: 2.596 ns/op
+Iteration   1: 2.387 ns/op
+Iteration   2: 2.376 ns/op
+[40.246s][info][gc] Total allocated: 7166 KB
+[40.246s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.privateNormal":
+  2.381 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflection
+
+# Run progress: 38.18% complete, ETA 00:22:50
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.529 ns/op
+# Warmup Iteration   2: 5.175 ns/op
+Iteration   1: 4.829 ns/op
+Iteration   2: 4.771 ns/op
+[40.253s][info][gc] Total allocated: 7166 KB
+[40.253s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflection":
+  4.800 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessible
+
+# Run progress: 40.00% complete, ETA 00:22:10
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 4.993 ns/op
+# Warmup Iteration   2: 4.630 ns/op
+Iteration   1: 4.389 ns/op
+Iteration   2: 4.374 ns/op
+[40.247s][info][gc] Total allocated: 7166 KB
+[40.247s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessible":
+  4.382 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrimitive
+
+# Run progress: 41.82% complete, ETA 00:21:29
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.227 ns/op
+# Warmup Iteration   2: 5.774 ns/op
+Iteration   1: 4.733 ns/op
+Iteration   2: 4.764 ns/op
+[40.239s][info][gc] Total allocated: 7163 KB
+[40.239s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrimitive":
+  4.749 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrivate
+
+# Run progress: 43.64% complete, ETA 00:20:49
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: 4.458 ns/op
+# Warmup Iteration   2: 4.594 ns/op
+Iteration   1: 4.531 ns/op
+Iteration   2: 4.505 ns/op
+[40.244s][info][gc] Total allocated: 7166 KB
+[40.244s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessiblePrivate":
+  4.518 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessibleSpecializedPrimitive
+
+# Run progress: 45.45% complete, ETA 00:20:09
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 4.703 ns/op
+# Warmup Iteration   2: 4.262 ns/op
+Iteration   1: 4.343 ns/op
+Iteration   2: 4.317 ns/op
+[40.253s][info][gc] Total allocated: 7163 KB
+[40.253s][info][gc] Average allocation rate: 177 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionAccessibleSpecializedPrimitive":
+  4.330 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionPrimitive
+
+# Run progress: 47.27% complete, ETA 00:19:28
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.299 ns/op
+# Warmup Iteration   2: 6.413 ns/op
+Iteration   1: 5.068 ns/op
+Iteration   2: 5.105 ns/op
+[40.239s][info][gc] Total allocated: 7166 KB
+[40.239s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionPrimitive":
+  5.087 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionSpecializedPrimitive
+
+# Run progress: 49.09% complete, ETA 00:18:48
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.311 ns/op
+# Warmup Iteration   2: 4.770 ns/op
+Iteration   1: 5.894 ns/op
+Iteration   2: 4.882 ns/op
+[40.242s][info][gc] Total allocated: 7166 KB
+[40.242s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.FieldBenchmark.reflectionSpecializedPrimitive":
+  5.388 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handle
+
+# Run progress: 50.91% complete, ETA 00:18:08
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.448s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.644s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.840s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.036s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.232s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.429s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.624s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.820s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.016s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.213s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.410s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.609s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.806s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[3.002s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.198s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.397s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.593s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.788s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.983s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.448s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.644s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.840s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.036s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.232s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.429s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.624s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.820s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.016s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.213s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.410s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.609s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.806s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[3.002s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.198s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.397s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.593s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.788s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.983s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleExact
+
+# Run progress: 50.91% complete, ETA 00:18:08
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.444s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.641s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.836s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.032s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.230s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.428s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.627s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.825s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.026s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.225s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.422s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.618s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.814s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[3.011s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.208s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.406s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.603s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.802s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[4.000s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.444s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.641s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.836s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.032s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.230s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.428s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.627s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.825s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.026s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.225s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.422s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.618s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.814s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[3.011s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.208s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.406s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.603s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.802s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[4.000s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleExactInline
+
+# Run progress: 50.91% complete, ETA 00:18:08
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.457s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.647s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.839s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.030s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.221s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.412s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.601s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.791s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.980s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.170s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.360s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.551s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.742s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.934s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.126s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.316s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.506s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.695s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.887s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.457s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.647s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.839s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.030s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.221s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.412s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.601s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.791s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.980s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.170s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.360s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.551s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.742s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.934s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.126s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.316s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.506s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.695s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.887s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleInline
+
+# Run progress: 50.91% complete, ETA 00:18:08
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.443s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.638s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.833s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.028s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.223s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.420s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.616s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.812s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.007s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.203s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.399s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.594s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.789s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.983s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.179s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.375s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.572s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.770s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.981s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.443s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.638s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.833s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.028s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.223s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.420s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.616s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.812s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.007s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.203s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.399s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.594s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.789s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.983s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.179s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.375s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.572s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.770s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.981s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitive
+
+# Run progress: 50.91% complete, ETA 00:18:08
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.557 ns/op
+# Warmup Iteration   2: 5.509 ns/op
+Iteration   1: 5.473 ns/op
+Iteration   2: 5.427 ns/op
+[40.253s][info][gc] Total allocated: 7245 KB
+[40.253s][info][gc] Average allocation rate: 179 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitive":
+  5.450 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxed
+
+# Run progress: 52.73% complete, ETA 00:17:43
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 8.622 ns/op
+# Warmup Iteration   2: 9.778 ns/op
+Iteration   1: 9.613 ns/op
+Iteration   2: 9.754 ns/op
+[40.236s][info][gc] Total allocated: 7314 KB
+[40.236s][info][gc] Average allocation rate: 181 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxed":
+  9.683 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxedInline
+
+# Run progress: 54.55% complete, ETA 00:17:01
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 8.076 ns/op
+# Warmup Iteration   2: 10.184 ns/op
+Iteration   1: 10.110 ns/op
+Iteration   2: 10.068 ns/op
+[40.253s][info][gc] Total allocated: 7314 KB
+[40.253s][info][gc] Average allocation rate: 181 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveBoxedInline":
+  10.089 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExact
+
+# Run progress: 56.36% complete, ETA 00:16:20
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 5.482 ns/op
+# Warmup Iteration   2: 5.459 ns/op
+Iteration   1: 5.621 ns/op
+Iteration   2: 5.456 ns/op
+[40.246s][info][gc] Total allocated: 7245 KB
+[40.246s][info][gc] Average allocation rate: 180 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExact":
+  5.538 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExactInline
+
+# Run progress: 58.18% complete, ETA 00:15:39
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.411 ns/op
+# Warmup Iteration   2: 2.312 ns/op
+Iteration   1: 2.339 ns/op
+Iteration   2: 2.324 ns/op
+[40.250s][info][gc] Total allocated: 7245 KB
+[40.250s][info][gc] Average allocation rate: 180 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveExactInline":
+  2.332 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveInline
+
+# Run progress: 60.00% complete, ETA 00:14:58
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.407 ns/op
+# Warmup Iteration   2: 2.288 ns/op
+Iteration   1: 2.336 ns/op
+Iteration   2: 2.338 ns/op
+[40.241s][info][gc] Total allocated: 7245 KB
+[40.241s][info][gc] Average allocation rate: 180 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handlePrimitiveInline":
+  2.337 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExact
+
+# Run progress: 61.82% complete, ETA 00:14:16
+# Fork: 1 of 1
+[0.006s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.006s][info][gc] Using TLAB allocation; max: 4096K
+[0.006s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.006s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.006s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.634s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.830s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[1.027s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.224s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.422s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.620s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.817s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[2.013s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.212s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.411s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.610s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.808s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[3.007s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[3.206s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.404s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.602s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.798s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.995s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[4.192s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.634s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.830s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[1.027s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.224s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.422s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.620s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.817s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[2.013s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[2.212s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.411s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.610s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.808s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[3.007s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[3.206s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.404s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.602s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.798s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.995s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[4.192s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactInline
+
+# Run progress: 61.82% complete, ETA 00:14:16
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.450s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.637s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.824s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.012s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.200s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.390s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.579s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.767s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.955s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.144s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.333s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.519s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.707s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.895s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.086s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.275s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.463s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.653s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.841s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.450s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.637s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.824s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.012s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.200s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.390s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.579s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.767s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.955s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.144s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.333s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.519s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.707s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.895s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.086s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.275s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.463s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.653s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.841s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactPrivate
+
+# Run progress: 61.82% complete, ETA 00:14:16
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.441s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.641s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.836s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.030s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.224s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.416s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.610s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.804s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.998s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.192s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.388s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.581s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.776s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.971s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.166s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.359s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.552s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.745s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.940s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.441s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.641s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.836s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.030s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.224s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.416s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.610s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.804s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.998s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.192s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.388s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.581s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.776s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.971s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.166s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.359s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.552s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.745s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.940s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedExactPrivateInline
+
+# Run progress: 61.82% complete, ETA 00:14:16
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.452s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.639s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.825s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.011s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.199s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.387s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.575s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.762s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.950s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.139s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.325s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.512s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.698s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.885s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.072s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.259s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.447s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.636s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.824s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.452s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.639s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.825s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.011s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.199s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.387s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.575s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.762s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.950s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.139s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.325s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.512s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.698s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.885s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.072s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.259s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.447s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.636s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.824s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExact
+
+# Run progress: 61.82% complete, ETA 00:14:16
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: 6.742 ns/op
+# Warmup Iteration   2: 6.423 ns/op
+Iteration   1: 5.872 ns/op
+Iteration   2: 5.973 ns/op
+[40.248s][info][gc] Total allocated: 7248 KB
+[40.248s][info][gc] Average allocation rate: 180 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExact":
+  5.923 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExactInline
+
+# Run progress: 63.64% complete, ETA 00:13:45
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.541 ns/op
+# Warmup Iteration   2: 2.322 ns/op
+Iteration   1: 2.348 ns/op
+Iteration   2: 2.357 ns/op
+[40.260s][info][gc] Total allocated: 7245 KB
+[40.260s][info][gc] Average allocation rate: 179 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.handleUnreflectedPrimitiveExactInline":
+  2.352 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.normal
+
+# Run progress: 65.45% complete, ETA 00:13:03
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.443s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.631s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.818s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.008s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.194s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.382s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.573s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.760s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.948s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.138s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.327s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.514s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.703s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.891s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.079s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.264s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.453s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.639s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.826s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.443s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.631s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.818s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.008s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.194s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.382s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.573s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.760s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.948s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.138s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.327s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.514s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.703s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.891s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.079s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.264s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.453s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.639s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.826s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.primitive
+
+# Run progress: 65.45% complete, ETA 00:13:03
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: 2.413 ns/op
+# Warmup Iteration   2: 2.314 ns/op
+Iteration   1: 2.346 ns/op
+Iteration   2: 2.428 ns/op
+[40.258s][info][gc] Total allocated: 7199 KB
+[40.258s][info][gc] Average allocation rate: 178 KB/sec
+
+
+Result "framwk.benchmark.jmh.reflection.InvocationBenchmark.primitive":
+  2.387 ns/op
+
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.privateNormal
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.450s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.637s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.823s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.011s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.200s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.388s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.576s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.763s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.951s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.139s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.326s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.512s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.698s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.884s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.073s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.261s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.450s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.645s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.835s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.450s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.637s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.823s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.011s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.200s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.388s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.576s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.763s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.951s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[2.139s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.326s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.512s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.698s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.884s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[3.073s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[3.261s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.450s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.645s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.835s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflection
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.426s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.587s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.745s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.903s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.060s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.216s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.381s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.545s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.704s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.863s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.023s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.180s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.338s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.495s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.652s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.813s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.970s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.127s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.285s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.426s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.587s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.745s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.903s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.060s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.216s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.381s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.545s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.704s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.863s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.023s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.180s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.338s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.495s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.652s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.813s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.970s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.127s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.285s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessible
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.406s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.561s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.718s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.875s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.033s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.189s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.346s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.501s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.657s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.813s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[1.969s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.123s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.280s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.437s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.593s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.750s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.910s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.067s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.223s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.406s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.561s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.718s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.875s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.033s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.189s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.346s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.501s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.657s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.813s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[1.969s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.123s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.280s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.437s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.593s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.750s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.910s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.067s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.223s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessiblePrimitive
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.388s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.556s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.725s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.894s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.062s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.230s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.398s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.565s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.735s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.904s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.072s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.238s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.407s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.576s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.743s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.911s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.077s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.245s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.414s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.388s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.556s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.725s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.894s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.062s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.230s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.398s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.565s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.735s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.904s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.072s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.238s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.407s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.576s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.743s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.911s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.077s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.245s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.414s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionAccessiblePrivate
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.403s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.559s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.715s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.872s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.029s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.186s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.343s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.500s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.657s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.818s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[1.977s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.135s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.291s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.447s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.605s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.764s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.926s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.086s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.244s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.403s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.559s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.715s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.872s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.029s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.186s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.343s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.500s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.657s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.818s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[1.977s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.135s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.291s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.447s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.605s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.764s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.926s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.086s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.244s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.InvocationBenchmark.reflectionPrimitive
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.419s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.587s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.755s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.922s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.091s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.258s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.425s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.592s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.761s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.928s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.097s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.265s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.437s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.606s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.772s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.938s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.106s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.276s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.447s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.419s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.587s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.755s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.922s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[1.091s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.258s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.425s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.592s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.761s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.928s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[2.097s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.265s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.437s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.606s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.772s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.938s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[3.106s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[3.276s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.447s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.LookupBenchmark.handle
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.699s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[1.122s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.01%) used
+[1.548s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.976s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[2.405s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[2.833s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[3.260s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[3.690s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[4.114s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[4.546s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[4.972s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[5.404s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[5.834s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[6.260s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[6.686s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[7.111s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[7.541s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[7.972s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[8.404s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.699s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[1.122s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.01%) used
+[1.548s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[1.976s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[2.405s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[2.833s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[3.260s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[3.690s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[4.114s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[4.546s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[4.972s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[5.404s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[5.834s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[6.260s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[6.686s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[7.111s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[7.541s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[7.972s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[8.404s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.LookupBenchmark.handlePreLookedUp
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.007s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.007s][info][gc] Using TLAB allocation; max: 4096K
+[0.007s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.007s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.007s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.742s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[1.234s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[1.748s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[2.870s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[3.617s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[4.335s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[4.844s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[5.910s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[6.438s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[6.984s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[7.507s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[8.025s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[8.576s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[9.085s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[9.600s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[10.118s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+1060.818 ns/op
+# Warmup Iteration   2: [10.646s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[11.202s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.09%) used
+[11.732s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.742s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[1.234s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[1.748s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[2.870s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[3.617s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[4.335s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[4.844s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[5.910s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[6.438s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[6.984s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[7.507s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[8.025s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[8.576s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[9.085s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[9.600s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[10.118s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[10.646s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[11.202s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.09%) used
+[11.732s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# JMH version: 1.22
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home/bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xlog:gc -Xmx4G -Xms4G
+# Warmup: 2 iterations, 10 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: framwk.benchmark.jmh.reflection.LookupBenchmark.reflection
+
+# Run progress: 67.27% complete, ETA 00:12:24
+# Fork: 1 of 1
+[0.008s][info][gc] Non-resizeable heap; start/max: 4096M
+[0.008s][info][gc] Using TLAB allocation; max: 4096K
+[0.008s][info][gc] Elastic TLABs enabled; elasticity: 1.10x
+[0.008s][info][gc] Elastic TLABs decay enabled; decay time: 1000ms
+[0.008s][info][gc] Using Epsilon
+# Warmup Iteration   1: [0.376s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.524s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.671s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.819s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[0.967s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.115s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.265s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.414s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.563s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.712s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[1.859s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.008s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.155s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.303s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.451s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.600s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.747s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[2.898s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.049s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+<forked VM failed with exit code 3>
+<stdout last='20 lines'>
+[0.376s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 204M (5.00%) used
+[0.524s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 409M (10.00%) used
+[0.671s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 614M (15.01%) used
+[0.819s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 819M (20.01%) used
+[0.967s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1024M (25.02%) used
+[1.115s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1229M (30.02%) used
+[1.265s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1434M (35.03%) used
+[1.414s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1639M (40.03%) used
+[1.563s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 1844M (45.04%) used
+[1.712s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2049M (50.04%) used
+[1.859s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2254M (55.05%) used
+[2.008s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2459M (60.05%) used
+[2.155s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2664M (65.06%) used
+[2.303s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 2869M (70.06%) used
+[2.451s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3074M (75.07%) used
+[2.600s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3279M (80.07%) used
+[2.747s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3484M (85.08%) used
+[2.898s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3689M (90.08%) used
+[3.049s][info][gc] Heap: 4096M reserved, 4096M (100.00%) committed, 3894M (95.09%) used
+Terminating due to java.lang.OutOfMemoryError: Java heap space
+</stdout>
+<stderr last='20 lines'>
+</stderr>
+
+# Run complete. Total time: 00:25:29
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                  Mode  Cnt   Score   Error  Units
+FieldBenchmark.handle                                      avgt    2   6.008          ns/op
+FieldBenchmark.handleExact                                 avgt    2   5.481          ns/op
+FieldBenchmark.handleExactInline                           avgt    2   2.369          ns/op
+FieldBenchmark.handleExactPrimitive                        avgt    2   4.929          ns/op
+FieldBenchmark.handleExactPrimitiveInline                  avgt    2   2.331          ns/op
+FieldBenchmark.handleInline                                avgt    2   4.907          ns/op
+FieldBenchmark.handlePrimitive                             avgt    2   4.881          ns/op
+FieldBenchmark.handlePrimitiveInline                       avgt    2   2.313          ns/op
+FieldBenchmark.handleUnreflected                           avgt    2   5.835          ns/op
+FieldBenchmark.handleUnreflectedExact                      avgt    2   5.304          ns/op
+FieldBenchmark.handleUnreflectedExactInline                avgt    2   2.341          ns/op
+FieldBenchmark.handleUnreflectedExactPrimitive             avgt    2   4.897          ns/op
+FieldBenchmark.handleUnreflectedExactPrimitiveInline       avgt    2   2.300          ns/op
+FieldBenchmark.handleUnreflectedInline                     avgt    2   4.835          ns/op
+FieldBenchmark.handleUnreflectedPrimitive                  avgt    2   4.882          ns/op
+FieldBenchmark.handleUnreflectedPrimitiveInline            avgt    2   2.321          ns/op
+FieldBenchmark.handleUnreflectedPrivate                    avgt    2   5.160          ns/op
+FieldBenchmark.handleUnreflectedPrivateInline              avgt    2   2.328          ns/op
+FieldBenchmark.normal                                      avgt    2   2.340          ns/op
+FieldBenchmark.primitive                                   avgt    2   2.328          ns/op
+FieldBenchmark.privateNormal                               avgt    2   2.381          ns/op
+FieldBenchmark.reflection                                  avgt    2   4.800          ns/op
+FieldBenchmark.reflectionAccessible                        avgt    2   4.382          ns/op
+FieldBenchmark.reflectionAccessiblePrimitive               avgt    2   4.749          ns/op
+FieldBenchmark.reflectionAccessiblePrivate                 avgt    2   4.518          ns/op
+FieldBenchmark.reflectionAccessibleSpecializedPrimitive    avgt    2   4.330          ns/op
+FieldBenchmark.reflectionPrimitive                         avgt    2   5.087          ns/op
+FieldBenchmark.reflectionSpecializedPrimitive              avgt    2   5.388          ns/op
+InvocationBenchmark.handlePrimitive                        avgt    2   5.450          ns/op
+InvocationBenchmark.handlePrimitiveBoxed                   avgt    2   9.683          ns/op
+InvocationBenchmark.handlePrimitiveBoxedInline             avgt    2  10.089          ns/op
+InvocationBenchmark.handlePrimitiveExact                   avgt    2   5.538          ns/op
+InvocationBenchmark.handlePrimitiveExactInline             avgt    2   2.332          ns/op
+InvocationBenchmark.handlePrimitiveInline                  avgt    2   2.337          ns/op
+InvocationBenchmark.handleUnreflectedPrimitiveExact        avgt    2   5.923          ns/op
+InvocationBenchmark.handleUnreflectedPrimitiveExactInline  avgt    2   2.352          ns/op
+InvocationBenchmark.primitive                              avgt    2   2.387          ns/op
+[1577.355s][info][gc] Total allocated: 37757 KB
+[1577.355s][info][gc] Average allocation rate: 23 KB/sec
