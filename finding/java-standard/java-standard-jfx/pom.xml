@@ -40,7 +40,7 @@
             <id>14</id>
             <properties>
                 <java.version>14</java.version>
-                <jfx.version>14-ea+4</jfx.version>
+                <jfx.version>14-ea+6</jfx.version>
             </properties>
         </profile>
     </profiles>

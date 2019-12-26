@@ -76,9 +76,9 @@ impl List {
         }
     }
 
-    fn stringfiy(&self) -> String {
+    fn stringify(&self) -> String {
         match *self {
-            List::Cons(head, ref tail) => format!("{}, {}", head, tail.stringfiy()),
+            List::Cons(head, ref tail) => format!("{}, {}", head, tail.stringify()),
             List::Nil => format!("Nil"),
         }
     }
@@ -94,5 +94,5 @@ pub fn linked_list() {
     list = list.prepend(5);
 
     println!("linked list has length {}", list.len());
-    println!("{}", list.stringfiy());
+    println!("{}", list.stringify());
 }

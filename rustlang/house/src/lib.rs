@@ -1,5 +1,15 @@
-extern crate futures;
-extern crate tarpc;
-extern crate tokio;
+#[tarpc::service]
+pub trait World {
+    async fn hello(name: String) -> String;
+}
 
-pub mod world;
+/// 索引文档
+pub trait Index {
+    fn index();
+}
+
+pub mod se;
+
+#[macro_use]
+extern crate tantivy;
+extern crate tempdir;

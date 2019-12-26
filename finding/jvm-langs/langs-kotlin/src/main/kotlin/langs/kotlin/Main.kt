@@ -5,7 +5,6 @@ package langs.kotlin
  *
  * @author yakir <a href="yakirchen.github.io">yakirchen.github.io</a> on 2018/12/28 14:50.
  */
-
 fun main(args: Array<String>) {
 
     val yakir = Person("yakir");

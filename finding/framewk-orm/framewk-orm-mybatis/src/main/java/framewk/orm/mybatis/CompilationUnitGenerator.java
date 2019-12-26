@@ -1,4 +1,4 @@
-package framewk.org.mybatis;
+package framewk.orm.mybatis;
 
 import org.mybatis.generator.api.dom.java.CompilationUnit;
 

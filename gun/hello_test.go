@@ -100,7 +100,10 @@ func TestFuncAsArg(t *testing.T) {
 func TestAnonymityFunction(t *testing.T) {
 
 	a, b := 1, 2
+
 	// 匿名函数
+	// 匿名函数不能独立存在，但是可以赋值给某个变量
+	// 然后通过变量名进行函数调用
 	rt := func(a, b int) int { return a + b }(a, b)
 	fmt.Printf("%d %d %d \n", a, b, rt)
 

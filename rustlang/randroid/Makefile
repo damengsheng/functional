@@ -8,12 +8,13 @@ prepare:
 	rustup target add aarch64-linux-android
 	rustup target add armv7-linux-androideabi
 	rustup target add i686-linux-android
+	rustup target add x86_64-linux-android
 
 ndk:
 	rm -rf /Volumes/sm/repos/android/NDK/
-	/Volumes/sm/repos/android/sdk/ndk-bundle/build/tools/make_standalone_toolchain.py --force --api 29 --arch arm64 --install-dir /Volumes/sm/repos/android/NDK/arm64;
-	/Volumes/sm/repos/android/sdk/ndk-bundle/build/tools/make_standalone_toolchain.py --force --api 29 --arch arm --install-dir /Volumes/sm/repos/android/NDK/arm;
-	/Volumes/sm/repos/android/sdk/ndk-bundle/build/tools/make_standalone_toolchain.py --force --api 29 --arch x86 --install-dir /Volumes/sm/repos/android/NDK/x86;
+	/Volumes/sm/repos/android/sdk/ndk/20.1.5948944/build/tools/make_standalone_toolchain.py --force --api 29 --arch arm64 --install-dir /Volumes/sm/repos/android/NDK/arm64;
+	/Volumes/sm/repos/android/sdk/ndk/20.1.5948944/build/tools/make_standalone_toolchain.py --force --api 29 --arch arm --install-dir /Volumes/sm/repos/android/NDK/arm;
+	/Volumes/sm/repos/android/sdk/ndk/20.1.5948944/build/tools/make_standalone_toolchain.py --force --api 29 --arch x86 --install-dir /Volumes/sm/repos/android/NDK/x86;
 
 build:
 	cp config ~/local/rust/config

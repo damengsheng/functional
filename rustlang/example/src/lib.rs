@@ -26,4 +26,6 @@ pub mod attributes;
 
 pub mod generics;
 
+pub mod generics_associated_types;
+
 pub mod threads;

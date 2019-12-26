@@ -1,11 +1,11 @@
 [target.aarch64-linux-android]
-ar = "/Volumes/To/repos/android/NDK/arm64/bin/aarch64-linux-android-ar"
-linker = "/Volumes/To/repos/android/NDK/arm64/bin/aarch64-linux-android-clang"
+ar = "/Volumes/sm/repos/android/NDK/arm64/bin/aarch64-linux-android-ar"
+linker = "/Volumes/sm/repos/android/NDK/arm64/bin/aarch64-linux-android-clang"
 
 [target.armv7-linux-androideabi]
-ar = "/Volumes/To/repos/android/NDK/arm/bin/arm-linux-androideabi-ar"
-linker = "/Volumes/To/repos/android/NDK/arm/bin/arm-linux-androideabi-clang"
+ar = "/Volumes/sm/repos/android/NDK/arm/bin/arm-linux-androideabi-ar"
+linker = "/Volumes/sm/repos/android/NDK/arm/bin/arm-linux-androideabi-clang"
 
 [target.i686-linux-android]
-ar = "/Volumes/To/repos/android/NDK/x86/bin/i686-linux-android-ar"
-linker = "/Volumes/To/repos/android/NDK/x86/bin/i686-linux-android-clang"
+ar = "/Volumes/sm/repos/android/NDK/x86/bin/i686-linux-android-ar"
+linker = "/Volumes/sm/repos/android/NDK/x86/bin/i686-linux-android-clang"

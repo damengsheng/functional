@@ -1,15 +1,14 @@
-<!DOCTYPE generatorConfiguration PUBLIC
-        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
-        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <context id="dsql" targetRuntime="MyBatis3DynamicSql">
-        <jdbcConnection driverClass="org.hsqldb.jdbcDriver"
-                        connectionURL="jdbc:hsqldb:mem:aname" />
 
-        <javaModelGenerator targetPackage="example.model" targetProject="src/main/java"/>
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306"/>
 
-        <javaClientGenerator targetPackage="example.mapper" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="framewk.orm.model" targetProject="src/main/java"/>
 
-        <table tableName="FooTable" />
+        <javaClientGenerator targetPackage="framewk.orm.mapper" targetProject="src/main/java"/>
+
+        <table tableName="FooTable"/>
+
     </context>
 </generatorConfiguration>

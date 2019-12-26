@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>langs-kotlin</module>
+<!--        <module>langs-kotlin</module>-->
         <module>langs-groovy</module>
         <module>langs-scala</module>
     </modules>

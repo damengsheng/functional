@@ -1,5 +1,0 @@
-rootProject.name = 'rok'
-
-include ':rok-common',
-        ':rok-processor',
-        ':rok-intellij'

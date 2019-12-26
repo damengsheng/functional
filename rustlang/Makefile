@@ -4,7 +4,7 @@ export out_dir=../target/debug/deps
 
 members=./ bridgec
 
-all: fmt test build
+all: metadata build
 
 clean:
 	RUST_BACKTRACE=1 cargo clean -v

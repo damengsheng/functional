@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <dubbo.version>2.7.5-SNAPSHOT</dubbo.version>
+        <dubbo.version>2.7.5</dubbo.version>
         <springboot.version>2.2.2.RELEASE</springboot.version>
         <grpc.version>1.26.0</grpc.version>
         <grpc.protos.version>1.17.0</grpc.protos.version>
